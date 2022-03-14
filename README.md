@@ -14,19 +14,19 @@ applications of the platform to educational assessment data.
 
 The four demonstrations are described below linking to their individual repos and presentations:
 
-### Using GitHub to building and distribe R packages
+### Using GitHub to building and distribute R packages
 
-Perhaps the greatest strength of [R](https://cran.r-project.org/) is its extensibility, with the ability
-to expand base R in innumerable ways. Although building your first R package can be a daunting task, doing so
-tames analytic complexity and adds fidelity to any data-related task in which one engages. In this
-demonstration, [Damian Betebenner](https://github.com/dbetebenner) presents how to quickly build
-your first R package from a package skeleton on GitHub. Building a package using a GitHub repository
+Perhaps the greatest strength of [R](https://cran.r-project.org/) is its extensibility. The ability to
+create packages with R has led to the development of tens of thousands of speciality software packages
+that expand base R in innumerable ways. Although building your first R package can be a daunting task,
+doing so is well worth the effort: An R package adds fidelity to any data-related task and greatly tames
+analytic complexity. In this demonstration, [Damian Betebenner](https://github.com/dbetebenner) presents how to quickly build
+your first R package from a package skeleton on GitHub. Coupling R package development with a GitHub repository
 has many advantages, including
 
 * better code maintenance,
 * easy distribution of the package to other users, and
 * online documentation via [GitHub Pages](https://pages.github.com/)
-
 
 The repo containing the package skeleton is located [here](https://github.com/dbetebenner/customizedPackageForR).
 
