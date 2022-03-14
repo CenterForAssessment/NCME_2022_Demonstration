@@ -1,0 +1,46 @@
+DESCRIPTION:
+  Package: NCME 2022 Demonstration
+  Title: Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research
+  Authors@R: c(person(given=c("Damian", "W."), family="Betebenner", email="dbetebenner@nciea.org", role=c("aut", "cre")),
+           person(given=c("Adam", "R."), family="Van Iwaarden", email="avaniwaarden@gmail.com", role="aut"),
+           person(given=c("Nathan"), family="Dadey", email="ndadey@nciea.org", role="aut"),
+           person(given=c("Allie"), family="Cooperman", email="coope782@umn.edu", role="aut"))
+  License: GPL-3
+  BugReports: https://github.com/CenterForAssessment/NCME_2022_Demonstration/issues
+
+template:
+  package: centerPackageTemplate
+  default_assets: false
+
+
+home:
+  strip_header: true
+  links:
+    - text: NCME 2022 Demonstration Presentations
+      href: https://centerforassessment.github.io/
+
+
+navbar:
+    title: ~
+    type: default
+    left:
+    - text: Presentations
+      menu:
+      - text: "Building and Distributing an R package using GitHub"
+        href: articles/SGPstateData_Specifications.html
+      - text: ""
+        href:
+      - text: "Building and Distributing an R package using GitHub"
+        href:
+      - text: "Building and Distributing an R package using GitHub"
+        href:
+    - text: News
+      menu:
+      - text: "NCME 2022 Demonstration"
+      - text: "March 2022"
+        href: articles/releases/NCME_2022_Demonstration_Notes.html
+    right:
+      - icon: fab fa-github
+        href: https://github.com/centerforassessment/NCME_2022_Demonstration
+      - icon: fab fa-twitter
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FNCME_2022_Demonstration%2F&via=NCIEA1&text=NCME%202022:%2Using%20GitHub%20for%20Open-Source%20Analytics,%20Reporting, and Dissemination of Research&hashtags=rstats%2CSGP
