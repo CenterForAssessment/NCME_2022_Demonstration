@@ -25,7 +25,10 @@ has many advantages, including
 
 * better code maintenance,
 * easy distribution of the package to other users, and
-* online documentation via [GitHub Pages](https://pages.github.com/).
+* online documentation via [GitHub Pages](https://pages.github.com/)
+
+
+The repo containing the package skeleton is located [here](https://github.com/dbetebenner/customizedPackageForR).
 
 ### Using GitHub Pages to disseminate
 
