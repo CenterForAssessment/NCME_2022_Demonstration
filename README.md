@@ -14,7 +14,7 @@ applications of the platform to educational assessment data.
 
 The four demonstrations are described below linking to their individual repos and presentations:
 
-### Building and Distributing an R package using GitHub
+### Using GitHub to building and distribe R packages
 
 Perhaps the greatest strength of [R](https://cran.r-project.org/) is its extensibility, with the ability
 to expand base R in innumerable ways. Although building your first R package can be a daunting task, doing so
@@ -30,7 +30,7 @@ has many advantages, including
 
 The repo containing the package skeleton is located [here](https://github.com/dbetebenner/customizedPackageForR).
 
-### Using GitHub Pages to Collate and Disseminate Data Analysis
+### Using GitHub to collate and disseminate data analyses
 
 GitHub allows users to collate their analyses into a user-friendly, distribution-ready website.
 In this demonstration we show how to researchers can leverage [Github Pages](https://pages.github.com/) and
@@ -43,7 +43,7 @@ skeleton website within RStudio, including how to incorporate new pages and stru
 webpage navigation. We also discuss the benefits of developing a project website for promoting collaboration
 and reproducible research practices.
 
-### Using GitHub and RMarkdown for Report Generation and Dissemination
+### Using GitHub and RMarkdown for report generation and dissemination
 
 Data analysts are often tasked with writing reports that
 describe data, analyses, and results associated with a project. Depending upon the nature of the

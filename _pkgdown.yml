@@ -26,14 +26,14 @@ navbar:
     left:
     - text: Presentations
       menu:
-      - text: "Building and Distributing an R package using GitHub"
-        href: articles/SGPstateData_Specifications.html
-      - text: ""
-        href:
-      - text: "Building and Distributing an R package using GitHub"
-        href:
-      - text: "Building and Distributing an R package using GitHub"
-        href:
+      - text: "Using GitHub to building and distribe R packages"
+        href: https://github.com/dbetebenner/customizedPackageForR
+      - text: "Using GitHub to collate and disseminate data analyses"
+        href: https://github.com/alliecooperman
+      - text: "Using GitHub and RMarkdown for report generation and dissemination"
+        href: https://github.com/adamvi
+      - text: "Using GitHub to consolodate the analysis and dissemination of research"
+        href: https://github.com/ndadey
     - text: News
       menu:
       - text: "NCME 2022 Demonstration"
@@ -43,4 +43,4 @@ navbar:
       - icon: fab fa-github
         href: https://github.com/centerforassessment/NCME_2022_Demonstration
       - icon: fab fa-twitter
-        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FNCME_2022_Demonstration%2F&via=NCIEA1&text=NCME%202022:%2Using%20GitHub%20for%20Open-Source%20Analytics,%20Reporting, and Dissemination of Research&hashtags=rstats%2CSGP
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FNCME_2022_Demonstration%2F&via=NCIEA1&text=NCME%202022:%20Using%20GitHub%20for%20Open-Source%20Analytics%2C%20Reporting%2C%20and%20Dissemination%20of%20Research&hashtags=rstats%2CNCME22
