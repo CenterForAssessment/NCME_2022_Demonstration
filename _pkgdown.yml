@@ -26,7 +26,7 @@ navbar:
     left:
     - text: Presentations
       menu:
-      - text: "Using GitHub to building and distribe R packages"
+      - text: "Using GitHub to building and distribute R packages"
         href: https://github.com/dbetebenner/customizedPackageForR
       - text: "Using GitHub to collate and disseminate data analyses"
         href: https://github.com/alliecooperman
