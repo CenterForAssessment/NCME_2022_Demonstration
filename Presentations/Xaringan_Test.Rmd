@@ -19,6 +19,16 @@ background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharin
 options(htmltools.dir.version = FALSE)
 ```
 
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r style-share-again, echo=FALSE}
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter")
+)
+```
+
 ???
 
 Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
