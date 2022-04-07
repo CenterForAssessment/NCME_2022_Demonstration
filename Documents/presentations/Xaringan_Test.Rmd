@@ -1,0 +1,12 @@
+---
+title: "Xaringan_Test Presentation"
+date: "April 7th, 2022"
+---
+
+```{r, echo = FALSE}
+    xaringanExtra::embed_xaringan(
+    url = '../../presentations/Xaringan_Test.html',
+    ratio = "4:3",
+    max_width = 800
+    )
+```

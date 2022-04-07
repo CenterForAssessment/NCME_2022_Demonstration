@@ -29,7 +29,7 @@ navbar:
       - text: "Using GitHub to building and distribute R packages"
         href: https://github.com/dbetebenner/customizedPackageForR
       - text: "Test of Xaringen Presentation with packagePages"
-        href: articles/presentations/Xaringan_Test_Embed.html
+        href: articles/presentations/Xaringan_Test.html
       - text: "Using GitHub to collate and disseminate data analyses"
         href: https://github.com/alliecooperman
       - text: "Using GitHub and RMarkdown for report generation and dissemination"
