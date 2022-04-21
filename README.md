@@ -1,6 +1,6 @@
 # NCME 2022 Demonstration
 
-## Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research
+# Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research
 
 This GitHub repo provides source code associated with the NCME group demonstration showcasing
 novel uses of GitHub for promoting research in educational assessment. Specifically, we present a
@@ -14,7 +14,7 @@ applications of the platform to educational assessment data.
 
 The four demonstrations are described below linking to their individual repos and presentations:
 
-### Using GitHub to building and distribute R packages
+## Using GitHub to building and distribute R packages [@dbetebenner](https://github.com/dbetebenner)
 
 Perhaps the greatest strength of [R](https://cran.r-project.org/) is its extensibility. The ability to
 create packages with R has led to the development of tens of thousands of speciality software packages
@@ -30,7 +30,7 @@ has many advantages, including
 
 The repo containing the package skeleton is located [here](https://github.com/dbetebenner/customizedPackageForR).
 
-### Using GitHub to collate and disseminate data analyses
+## Web-Based Distribution of Research using GitHub [@alliecooperman](https://github.com/alliecooperman)
 
 GitHub allows users to collate their analyses into a user-friendly, distribution-ready website.
 In this demonstration we show how to researchers can leverage [Github Pages](https://pages.github.com/) and
@@ -43,7 +43,7 @@ skeleton website within RStudio, including how to incorporate new pages and stru
 webpage navigation. We also discuss the benefits of developing a project website for promoting collaboration
 and reproducible research practices.
 
-### Using GitHub and RMarkdown for report generation and dissemination
+## Using GitHub and RMarkdown for report generation and dissemination [@adamvi](https://github.com/adamvi)
 
 Data analysts are often tasked with writing reports that
 describe data, analyses, and results associated with a project. Depending upon the nature of the
@@ -53,7 +53,7 @@ writing as well as the production of final reports for dissemination. The proces
 utilizes R, R Markdown, and several associated R packages as the base tools to construct these
 reports.
 
-### Using GitHub to consolodate the analysis and dissemination of research
+## Using GitHub to consolodate the analysis and dissemination of research [@ndadey](https://github.com/ndadey)
 
 This demonstration illustrates how researchers can use a single GitHub
 repository to design, analyze, and disseminate educational research from start to finish. This

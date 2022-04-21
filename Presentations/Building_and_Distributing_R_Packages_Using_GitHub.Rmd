@@ -1,0 +1,51 @@
+---
+title: "Building and Distributing R Packages using GitHub"
+subtitle: "Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research"
+institute: "Center for Assessment"
+author: "Damian Betebenner"
+date: "April 21st, 2022 (updated: `r toOrdinal::toOrdinalDate(Sys.Date())`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: ["center", "middle", "my-title"]
+
+---
+class: inverse, center, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r style-share-again, echo=FALSE}
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter"),
+  background = "#009C49",
+  foreground = "#FFFFFF"
+)
+```
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+  image_url = "https://centerforassessment.github.io/assets/favicon.png",
+  width = "55px",
+  height = "64px",
+  position = xaringanExtra::css_position(top = "0.5em", right = "0.5em"),
+  link_url = "https://www.nciea.org"
+)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+xaringanExtra::use_clipboard()
+```

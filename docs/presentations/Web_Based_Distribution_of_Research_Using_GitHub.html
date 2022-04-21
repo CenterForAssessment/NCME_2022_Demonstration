@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Web-based Distribution of Research Using GitHub</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Allie Cooperman" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, my-title, title-slide
+
+.title[
+# Web-based Distribution of Research Using GitHub
+]
+.subtitle[
+## Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research
+]
+.author[
+### Allie Cooperman
+]
+.institute[
+### University of Minnesota
+]
+.date[
+### April 20th, 2022
+]
+
+---
+
+class: inverse, center, middle
+
+
+
+
+
+<style>.shareagain-bar {
+--shareagain-foreground: #FFFFFF;
+--shareagain-background: #009C49;
+--shareagain-facebook: none;
+--shareagain-linkedin: none;
+--shareagain-pinterest: none;
+--shareagain-pocket: none;
+--shareagain-reddit: none;
+}</style>
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 55px;
+height: 64px;
+z-index: 0;
+background-image: url(https://centerforassessment.github.io/assets/favicon.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:0.5em;right:0.5em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('a')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = 'https://www.nciea.org'
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+
+
+
+# Disseminating Results through GitHub Pages
+
+---
+
+# Improving Dissemination
+
+--
+
+### Data analysts, researchers, and practitioners are often looking for ways to clearly disseminate their findings to a broad audience.
+
+--
+
+### The open science push is fostering new ways to share code, data, and results that promote replication and reproducibility.
+
+--
+
+### [GitHub](https://github.com/) is an outstanding platform for distributing one's work, combining steps of the research project into one repository (i.e., "repo").
+
+--
+
+### How can we further improve the organization and presentation of a GitHub repo to more clearly disseminate one's work?
+
+---
+
+# GitHub Pages
+
+--
+
+### [GitHub Pages](https://pages.github.com/) allows users to turn their GitHub repo into a shareable, easy-to-read website.
+
+--
+
+### GitHub Pages is advantageous for dissemination because:
+
+--
+
+- Source code is easily available, facilitating reproducibility.
+
+--
+
+- Intensive webpage skills (e.g., HTML, JavaScript) are unnecessary, increasing accessibility to new users.
+
+--
+
+- GitHub is structured to foster collaboration.
+
+---
+
+# GitHub Pages
+
+--
+
+### Any public repo can be hosted as a GitHub page with a quick change of the repo settings.
+
+--
+
+### After cloning the repo to a local machine, users can build webpages using R and Markdown.
+
+--
+
+### Numerous (customizable) themes are available, including:
+
+--
+
+- [Supported themes from GitHub Pages](https://pages.github.com/themes/);
+
+--
+
+- Using the [pkgdown](https://pkgdown.r-lib.org/) R package (Wickham et al., 2022);
+
+--
+
+- Themes created by other GitHub users.
+
+---
+
+# Combining Pages with Open-Source R Packages
+
+--
+
+### Open-source R packages available on CRAN and GitHub allow you to more easily customize your website.
+
+--
+
+### The "packagePages" package from Center for Assessment was constructed by modifying "pkgdown," and builds websites through R/RStudio.
+
+--
+
+### The template "centerProjectTemplate" goes with "packagePages" to personalize the website design (e.g., organization colors and logos, navigation bar, headers and footers).
+
+---
+
+# What Can You Include in Your Website?
+
+--
+
+### Because GitHub Pages uses Git, R, and Markdown, numerous file types are available for your website:
+
+--
+
+- R Source code
+
+--
+
+- PDF or HTML presentations
+
+--
+
+- Dynamic HTML files
+
+--
+
+### In the context of a research project, users might push:
+
+--
+
+- Research findings with reproducible code
+
+--
+
+- Help files for R or Python functions
+
+--
+
+- Vignettes demonstrating different analytic methods
+
+--
+
+- Tutorials for running an analysis with a particular data set
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Completed a graduate internship with the Center for Assessment in Summer 2021.
+
+--
+
+### Addressed methodological challenges to measuring the academic impact of COVID-19, particularly when making cross-sectional comparisons.
+
+--
+
+### Internship work included:
+
+--
+
+- Comparing the efficacy of multiple imputation methods for missing scale scores and student growth percentiles;
+
+--
+
+- Exploring propensity score weighting to account for school enrollment changes; and
+
+--
+
+- Building R Markdown scripts for automated report generation.
+
+--
+
+### Created a [GitHub-hosted website](https://centerforassessment.github.io/Internship_2021/) to showcase this work.
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+.center[![Homepage for 2021 Internship Website on GitHub](Figs/websitehome.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+.center[![Landing Page for Propensity Score Weighting Analyses](Figs/pswlanding.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### The internship website was created as a public repo, and then cloned to the local machine through an RStudio project.
+
+--
+
+### The "packagePages" and "centerProjectTemplate" packages allowed website customization in line with the Center for Assessment.
+
+--
+
+### Webpages were built through .md (Markdown) and .rmd (R Markdown) files.
+
+--
+
+### Source code was included wherever possible to facilitate reproducibility.
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Using R Markdown, we wrote a series of vignettes to present analyses throughout the internship.
+
+--
+
+.center[![Propensity Score Weighting Vignette Example](Figs/vignetteexample.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Website source code is available in the repo, but we also included Markdown files with code to recreate the vignette analyses.
+
+--
+
+.center[![Landing Page for Multiple Imputation Source Code](Figs/sourcecode.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### PDF slide decks were linked to the website for three organization-wide presentations.
+
+--
+
+.center[![Landing Page for Internship Presentations](Figs/presentations.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Websites also allow you to include news and updates (e.g., release notes).
+
+--
+
+.center[![Page for Updates Throughout the Internship](Figs/news.png)]
+
+---
+
+# Resources and References
+
+--
+
+### [Internship website example](https://centerforassessment.github.io/Internship_2021/index.html)
+
+--
+
+### [Center for Assessment on GitHub](https://github.com/CenterForAssessment)
+
+--
+
+### [Getting Started with GitHub](https://docs.github.com/en/get-started)
+
+--
+
+### [GitHub Pages Documentation](https://docs.github.com/en/pages)
+
+--
+
+### [pkgdown](https://pkgdown.r-lib.org/authors.html) by Wickham, Hesselberth, &amp; Salmon (2022)
+
+--
+
+# Any questions?
+
+# coope782 at umn dot edu
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

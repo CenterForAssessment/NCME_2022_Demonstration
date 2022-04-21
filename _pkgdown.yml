@@ -9,7 +9,7 @@ DESCRIPTION:
   BugReports: https://github.com/CenterForAssessment/NCME_2022_Demonstration/issues
 
 template:
-  package: centerPackageTemplate
+  package: centerProjectTemplate
   default_assets: false
 
 
@@ -27,15 +27,13 @@ navbar:
     - text: Presentations
       menu:
       - text: "Using GitHub to building and distribute R packages"
-        href: https://github.com/dbetebenner/customizedPackageForR
-      - text: "Test of Xaringen Presentation with packagePages"
-        href: articles/presentations/Xaringan_Test.html
+        href: articles/presentations/Demonstration_Session_Presentations.html#using-github-to-build-distribute-r-packages
       - text: "Using GitHub to collate and disseminate data analyses"
-        href: https://github.com/alliecooperman
+        href: articles/presentations/Demonstration_Session_Presentations.html#web-based-distribution-of-research-using-github
       - text: "Using GitHub and RMarkdown for report generation and dissemination"
-        href: https://github.com/adamvi
+        href: articles/presentations/Demonstration_Session_Presentations.html#using-github-rmarkdown-for-report-generation-and-dissemination
       - text: "Using GitHub to consolodate the analysis and dissemination of research"
-        href: https://github.com/ndadey
+        href: articles/presentations/Demonstration_Session_Presentations.html#using-github-to-consolodate-the-analysis-and-dissemination-of-research
     - text: News
       menu:
       - text: "NCME 2022 Demonstration"
@@ -45,4 +43,4 @@ navbar:
       - icon: fab fa-github
         href: https://github.com/centerforassessment/NCME_2022_Demonstration
       - icon: fab fa-twitter
-        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FNCME_2022_Demonstration%2F&via=NCIEA1&text=NCME%202022:%20Using%20GitHub%20for%20Open-Source%20Analytics%2C%20Reporting%2C%20and%20Dissemination%20of%20Research&hashtags=rstats%2CNCME22
+        href: https://twitter.com/intent/tweet?url=https%3A%2F%2Fcenterforassessment.github.io%2FNCME_2022_Demonstration%2F&via=NCIEA1&text=NCME%202022:%20Using%20GitHub%20for%20Open-Source%20Analytics%2C%20Reporting%2C%20and%20Dissemination%20of%20Research&hashtags=NCME%2CNCME22%2CNCME2022%2CGitHub%2Crstats

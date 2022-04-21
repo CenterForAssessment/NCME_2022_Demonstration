@@ -1,0 +1,58 @@
+---
+title: NCME 2022 Demonstration Presentations
+date: "`r toOrdinal::toOrdinalDate(Sys.Date())`"
+---
+
+# April 23, 2022 Presentations
+
+## Using GitHub to Build & Distribute R Packages
+
+```{r, echo = FALSE}
+    xaringanExtra::embed_xaringan(
+    url = '../../presentations/Building_and_Distributing_R_Packages_Using_GitHub.html',
+    ratio = "4:3",
+    max_width = 800
+    )
+```
+
+<br>
+<br>
+<br>
+
+## Web-Based Distribution of Research using GitHub 
+
+```{r, echo = FALSE}
+    xaringanExtra::embed_xaringan(
+    url = '../../presentations/Web_Based_Distribution_of_Research_Using_GitHub.html',
+    ratio = "4:3",
+    max_width = 800
+    )
+```
+
+<br>
+<br>
+<br>
+
+## Using GitHub & RMarkdown for Report Generation and Dissemination
+
+```{r, echo = FALSE}
+    xaringanExtra::embed_xaringan(
+    url = '../../presentations/Report_Generation_and_Dissemination_Using_GitHub_and_RMarkdown.html',
+    ratio = "4:3",
+    max_width = 800
+    )
+```
+
+<br>
+<br>
+<br>
+
+## Using GitHub to Consolodate the Analysis and Dissemination of Research
+
+```{r, echo = FALSE}
+    xaringanExtra::embed_xaringan(
+    url = '../../presentations/Consolidating_Analysis_and_Dissemination_of_Research_Using_GitHub.html',
+    ratio = "4:3",
+    max_width = 800
+    )
+```

@@ -1,0 +1,325 @@
+---
+title: "Web-based Distribution of Research Using GitHub"
+subtitle: "Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research"
+author: "Allie Cooperman"
+institute: "University of Minnesota"
+date: "April 20th, 2022"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: ["center", "middle", "my-title"]
+---
+class: inverse, center, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r style-share-again, echo=FALSE}
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter"),
+  background = "#009C49",
+  foreground = "#FFFFFF"
+)
+```
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+  image_url = "https://centerforassessment.github.io/assets/favicon.png",
+  width = "55px",
+  height = "64px",
+  position = xaringanExtra::css_position(top = "0.5em", right = "0.5em"),
+  link_url = "https://www.nciea.org")
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+xaringanExtra::use_clipboard()
+```
+
+# Disseminating Results through GitHub Pages
+
+---
+
+# Improving Dissemination
+
+--
+
+### Data analysts, researchers, and practitioners are often looking for ways to clearly disseminate their findings to a broad audience.
+
+--
+
+### The open science push is fostering new ways to share code, data, and results that promote replication and reproducibility.
+
+--
+
+### [GitHub](https://github.com/) is an outstanding platform for distributing one's work, combining steps of the research project into one repository (i.e., "repo").
+
+--
+
+### How can we further improve the organization and presentation of a GitHub repo to more clearly disseminate one's work?
+
+---
+
+# GitHub Pages
+
+--
+
+### [GitHub Pages](https://pages.github.com/) allows users to turn their GitHub repo into a shareable, easy-to-read website.
+
+--
+
+### GitHub Pages is advantageous for dissemination because:
+
+--
+
+- Source code is easily available, facilitating reproducibility.
+
+--
+
+- Intensive webpage skills (e.g., HTML, JavaScript) are unnecessary, increasing accessibility to new users.
+
+--
+
+- GitHub is structured to foster collaboration.
+
+---
+
+# GitHub Pages
+
+--
+
+### Any public repo can be hosted as a GitHub page with a quick change of the repo settings.
+
+--
+
+### After cloning the repo to a local machine, users can build webpages using R and Markdown.
+
+--
+
+### Numerous (customizable) themes are available, including:
+
+--
+
+- [Supported themes from GitHub Pages](https://pages.github.com/themes/);
+
+--
+
+- Using the [pkgdown](https://pkgdown.r-lib.org/) R package (Wickham et al., 2022);
+
+--
+
+- Themes created by other GitHub users.
+
+---
+
+# Combining Pages with Open-Source R Packages
+
+--
+
+### Open-source R packages available on CRAN and GitHub allow you to more easily customize your website.
+
+--
+
+### The "packagePages" package from Center for Assessment was constructed by modifying "pkgdown," and builds websites through R/RStudio.
+
+--
+
+### The template "centerProjectTemplate" goes with "packagePages" to personalize the website design (e.g., organization colors and logos, navigation bar, headers and footers).
+
+---
+
+# What Can You Include in Your Website?
+
+--
+
+### Because GitHub Pages uses Git, R, and Markdown, numerous file types are available for your website:
+
+--
+
+- R Source code
+
+--
+
+- PDF or HTML presentations
+
+--
+
+- Dynamic HTML files
+
+--
+
+### In the context of a research project, users might push:
+
+--
+
+- Research findings with reproducible code
+
+--
+
+- Help files for R or Python functions
+
+--
+
+- Vignettes demonstrating different analytic methods
+
+--
+
+- Tutorials for running an analysis with a particular data set
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Completed a graduate internship with the Center for Assessment in Summer 2021.
+
+--
+
+### Addressed methodological challenges to measuring the academic impact of COVID-19, particularly when making cross-sectional comparisons.
+
+--
+
+### Internship work included:
+
+--
+
+- Comparing the efficacy of multiple imputation methods for missing scale scores and student growth percentiles;
+
+--
+
+- Exploring propensity score weighting to account for school enrollment changes; and
+
+--
+
+- Building R Markdown scripts for automated report generation.
+
+--
+
+### Created a [GitHub-hosted website](https://centerforassessment.github.io/Internship_2021/) to showcase this work.
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+.center[![Homepage for 2021 Internship Website on GitHub](Figs/websitehome.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+.center[![Landing Page for Propensity Score Weighting Analyses](Figs/pswlanding.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### The internship website was created as a public repo, and then cloned to the local machine through an RStudio project.
+
+--
+
+### The "packagePages" and "centerProjectTemplate" packages allowed website customization in line with the Center for Assessment.
+
+--
+
+### Webpages were built through .md (Markdown) and .rmd (R Markdown) files.
+
+--
+
+### Source code was included wherever possible to facilitate reproducibility.
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Using R Markdown, we wrote a series of vignettes to present analyses throughout the internship.
+
+--
+
+.center[![Propensity Score Weighting Vignette Example](Figs/vignetteexample.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Website source code is available in the repo, but we also included Markdown files with code to recreate the vignette analyses.
+
+--
+
+.center[![Landing Page for Multiple Imputation Source Code](Figs/sourcecode.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### PDF slide decks were linked to the website for three organization-wide presentations.
+
+--
+
+.center[![Landing Page for Internship Presentations](Figs/presentations.png)]
+
+---
+
+# Graduate Student Internship Website
+
+--
+
+### Websites also allow you to include news and updates (e.g., release notes).
+
+--
+
+.center[![Page for Updates Throughout the Internship](Figs/news.png)]
+
+---
+
+# Resources and References
+
+--
+
+### [Internship website example](https://centerforassessment.github.io/Internship_2021/index.html)
+
+--
+
+### [Center for Assessment on GitHub](https://github.com/CenterForAssessment)
+
+--
+
+### [Getting Started with GitHub](https://docs.github.com/en/get-started)
+
+--
+
+### [GitHub Pages Documentation](https://docs.github.com/en/pages)
+
+--
+
+### [pkgdown](https://pkgdown.r-lib.org/authors.html) by Wickham, Hesselberth, & Salmon (2022)
+
+--
+
+# Any questions?
+
+# coope782 at umn dot edu
