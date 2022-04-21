@@ -206,25 +206,27 @@ xaringanExtra::use_clipboard()
 
 - Building R Markdown scripts for automated report generation.
 
---
+---
+
+# Graduate Student Internship Website
 
 ### Created a [GitHub-hosted website](https://centerforassessment.github.io/Internship_2021/) to showcase this work.
 
+--
+
+``` {r internship_homepage, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+magick::image_read("Figs/websitehome.png")
+```
+
 ---
 
 # Graduate Student Internship Website
 
 --
 
-.center[![Homepage for 2021 Internship Website on GitHub](Figs/websitehome.png)]
-
----
-
-# Graduate Student Internship Website
-
---
-
-.center[![Landing Page for Propensity Score Weighting Analyses](Figs/pswlanding.png)]
+``` {r landing_page_for_propensity_score, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+magick::image_read("Figs/pswlanding.png")
+```
 
 ---
 
@@ -256,8 +258,9 @@ xaringanExtra::use_clipboard()
 
 --
 
-.center[![Propensity Score Weighting Vignette Example](Figs/vignetteexample.png)]
-
+``` {r vignette_example, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+magick::image_read("Figs/vignetteexample.png")
+```
 ---
 
 # Graduate Student Internship Website
@@ -268,7 +271,9 @@ xaringanExtra::use_clipboard()
 
 --
 
-.center[![Landing Page for Multiple Imputation Source Code](Figs/sourcecode.png)]
+``` {r landing_page, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+magick::image_read("Figs/sourcecode.png")
+```
 
 ---
 
@@ -280,7 +285,9 @@ xaringanExtra::use_clipboard()
 
 --
 
-.center[![Landing Page for Internship Presentations](Figs/presentations.png)]
+``` {r landing_page_internship, out.width='75%', fig.align='center', echo=FALSE, eval = TRUE}
+magick::image_read("Figs/presentations.png")
+```
 
 ---
 
@@ -292,7 +299,9 @@ xaringanExtra::use_clipboard()
 
 --
 
-.center[![Page for Updates Throughout the Internship](Figs/news.png)]
+``` {r page_for_internship_updates, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+magick::image_read("Figs/news.png")
+```
 
 ---
 
