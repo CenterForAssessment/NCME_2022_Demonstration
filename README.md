@@ -55,13 +55,10 @@ reports.
 
 ## Using GitHub to consolodate the analysis and dissemination of research [@ndadey](https://github.com/ndadey)
 
-This demonstration illustrates how researchers can use a single GitHub
-repository to design, analyze, and disseminate educational research from start to finish. This
-omnibus repository incorporates a suite of tools, such as author-written R packages and
-automated report generation, that can be easily customized to fit a particular project. Using an
-example repository designed for educational assessment research, we showcase how users can
-organize and share their project with interested researchers. In this demonstration, we emphasize
-the multiple ways in which an omnibus project repository exemplifies the advantages of opensource
-research. Even the most complex projects can be supported using this version control
-repository structure, allowing multiple analysts and researchers to seamlessly support and
-combine results from various research tasks.
+Prior presentations have focused on creating a series of vignettes or write ups via R individual 
+R markdown files linked through a webpage. This demonstration illustrates how researchers can use 
+the r [bookdown](https://bookdown.org/yihui/rmarkdown/books.html) package to house more complex analyses. 
+This approach may work well for projects that involve a number of interconnected analyses that need to be
+run regularly. For example, state educational agencies could use this approach to house a series of analyses that are 
+run and expanded on annually. Similarly, this approach could be used to house regular psychometric analyses conducted 
+on annual test data. 
