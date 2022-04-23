@@ -34,6 +34,16 @@ navbar:
         href: articles/presentations/Demonstration_Session_Presentations.html#using-github-rmarkdown-for-report-generation-and-dissemination
       - text: "Using GitHub to consolodate the analysis and dissemination of research"
         href: articles/presentations/Demonstration_Session_Presentations.html#using-github-to-consolodate-the-analysis-and-dissemination-of-research
+    - text: Documents
+      menu:
+      - text: "Flexible Report Generation"
+        href: articles/vignettes/Flexible_Report_Generation.html
+      - text: "Sample Working Paper theme"
+        href: articles/vignettes/State_A_Academic_Impact_Analysis_WP.html
+      - text: "Sample pagedreport theme"
+        href: articles/vignettes/State_A_Academic_Impact_Analysis_PgdRpt.html
+      - text: "Sample CFA Theme"
+        href: articles/vignettes/State_A_Academic_Impact_Analysis.html
     - text: News
       menu:
       - text: "NCME 2022 Demonstration"
