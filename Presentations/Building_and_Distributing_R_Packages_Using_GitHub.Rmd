@@ -56,11 +56,9 @@ xaringanExtra::use_clipboard()
 
 --
 
-.middle[
 ```{r echo=FALSE}
 magick::image_read_svg(path="Figs/Rlogo.svg", width=100, height=100)
 ```
-]
 
 --
 
@@ -123,3 +121,155 @@ class: inverse, center, middle
 # Superpower
 
 ---
+
+# GitHub + R
+
+--
+
+- The combination of GitHub and R has been the foundation of my work for the last 15 years.
+
+--
+
+- The combination supports and improves:
+
+--
+    - Reproducibility of analytics
+--
+    - Collaboration amongst team members
+--
+    - Dissemination of analytics and findings
+--
+
+- If data analysis and reporting results is your career, I can't recommend the combination of GitHub + R enough.
+
+---
+
+# R Packages
+
+--
+
+- R provides a simple to learn way of extending base R by creating packages
+
+--
+
+- The packages can be easily shared with other to share analytic or other extended R functionality
+
+--
+
+- Packages can be shared and installed by others in a multide of ways:
+
+--
+    - Email a zipped bundle to another person who can install it. (very oldschool and clunky)
+--
+    - Submit it to CRAN and use `install.packages()` to install the package. (Good for "official versions/archiving")
+--
+    - Build it on GitHub and use `remotes::install_github()` or `devtools::install_github` to install off of GitHub. (Get version control in addition to package hosting)
+
+--
+
+- The definitive guide on R package construction is [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html) available on CRAN.
+
+---
+
+# packageSkeletonForR
+
+--
+
+- We create a GitHub repo that is an R package skeleton for R
+
+--
+
+- [packageSkeletonForR](https://github.com/CenterForAssessment/packageSkeletonForR)
+
+--
+
+- The skeleton contains many of the pieces that you'll need to have in order to have a package
+
+--
+
+- The skeleton also contains several additional pieces (a website) describing the contents of the repo and how it works
+
+---
+# packageSkeletonForR
+
+```{r echo=FALSE}
+magick::image_read_pdf(path="Figs/packageSkeletonForR.pdf")
+```
+
+---
+# R Package Contents
+
+--
+
+- A folder `R` that contains your R scripts/functions
+
+--
+
+- A folder `inst` that contains `CITATION` and `NEWS` files
+
+--
+
+- A folder `man` that contains the manual pages associated with your exported functions
+
+--
+
+- A folder `tests` that contains tests associated with your functions (optional but recommended)
+
+--
+
+- A folder `vignettes` that contains RMarkdown vignettes associated with your package (optional but recommended)
+
+--
+
+- A file `DESCRIPTION` that contains text describing the package
+
+--
+
+- A file `NAMESPACE` that specific what gets imported and exported to/from the package.
+
+---
+# R Package Contents
+
+--
+
+- A Folder `.github` that contains a file allowing one to use GitHub to compile the R package and test for errors.
+
+--
+
+- A folder `docs` that contains the source code associated with the GitHub hosted website for the package (created by R package `packagePages` using the function `projectPages`)
+
+--
+
+- A file `.Rbuildignore` that specifies which files/folders to ignore when the package gets built.
+
+--
+
+- A file `.appveyor` that specific another continuous integration application (appveyor). Probably redundant with GitHub actions
+
+--
+
+- Files `README.md`, `NEWS.md` and `LICENSE.md` that are markdown based and provide information about the GitHub repo.
+
+--
+
+- A file `_pkgdown` which provides the structure for the dropdown menu of the website associated with the repo.
+
+---
+
+# Package Installation
+
+--
+
+# To install the package
+
+--
+
+- `remotes::install_github("centerforassessment/packageSkeletonForR")`
+
+--
+
+- Changes to the package can be made via commits to the GitHub repo which become `pull requests`
+
+--
+
+- Multiple people can make commits with different permissions as to who can merge in `pull requests`
