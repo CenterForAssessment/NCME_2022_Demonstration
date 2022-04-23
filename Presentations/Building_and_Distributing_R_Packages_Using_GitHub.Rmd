@@ -49,3 +49,77 @@ xaringanExtra::use_tile_view()
 ```{r xaringanExtra-clipboard, echo=FALSE}
 xaringanExtra::use_clipboard()
 ```
+# R
+---
+
+# R
+
+--
+
+.middle[
+```{r echo=FALSE}
+magick::image_read_svg(path="Figs/Rlogo.svg", width=100, height=100)
+```
+]
+
+--
+
+- Open soure software environment originally developed for statistical analysis (but now useful for lots more)
+
+--
+
+- Has become one of the most prominent environmetns for performing and developing data analytics/statistics
+
+--
+
+- Applicable to many other things (this presentation and the website on which it is based was created using R)
+
+--
+
+- One of its greatest strengths is its extensibility
+
+--
+
+- Allows users to create and distribute customized R software
+
+--
+
+- Currently 19,002 package on CRAN and many more available only on GitHub (which is a big part of what I'm going to talk about)
+
+
+---
+class: inverse, center, middle
+
+# GitHub
+
+---
+
+# GitHub
+
+--
+
+- GitHub is a code hosting platform for version control and collaboration
+
+--
+
+- Collaboration without coordination
+
+--
+
+- Often used for software development but is incredibly useful for data analytics
+
+---
+
+class: inverse, center, middle
+
+# GitHub
+
+# +
+
+# R
+
+# =
+
+# Superpower
+
+---
