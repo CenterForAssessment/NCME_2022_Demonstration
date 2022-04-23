@@ -3,7 +3,7 @@ title: "Consolidating Analysis and Dissemination of Research using GitHub"
 subtitle: "Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research"
 institute: "Center for Assessment"
 author: "Nathan Dadey"
-date: "April 21st, 2022 (updated: `r toOrdinal::toOrdinalDate(Sys.Date())`)"
+date: "April 23rd, 2022 (updated: `r toOrdinal::toOrdinalDate(Sys.Date())`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -50,13 +50,16 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_clipboard()
 ```
 
+# Consolidating Analysis and Dissemination of Research using GitHub
+
+---
 
 #  Motivation: Data Driven Documents 
 
-+ In many cases, work can be shared well via one or more short vignettes or other write ups (e.g., Allie's excellent vignettes on [multiple imputation](https://centerforassessment.github.io/Internship_2021/articles/PSW_Vignette_Landing_Page.html) and [propensity score weighting](https://centerforassessment.github.io/Internship_2021/articles/MI_Vignette_Landing_Page.html))
++ In many cases, work can be shared well via one or more **short vignettes or other write ups** (e.g., Allie's excellent vignettes on [multiple imputation](https://centerforassessment.github.io/Internship_2021/articles/PSW_Vignette_Landing_Page.html) and [propensity score weighting](https://centerforassessment.github.io/Internship_2021/articles/MI_Vignette_Landing_Page.html))
 --
 
-+ Such write-ups can also be thought of as one form of data-driven documents (e.g., [NYT](https:/www.nytimes.com/interactive/2017/12/05/upshot/a-better-way-to-compare-public-schools.html) 
++ Such write-ups can also be thought of as one form of **data-driven documents** (e.g., [NYT](https:/www.nytimes.com/interactive/2017/12/05/upshot/a-better-way-to-compare-public-schools.html) 
 [Articles](https:/www.nytimes.com/interactive/2017/12/05/upshot/a-better-way-to-compare-public-schools.html), which typically:
   + Are well structured
   + Provide a limited n umber of comparisons
@@ -68,7 +71,7 @@ xaringanExtra::use_clipboard()
 
 #  Motivation: Dashboards and Data Explorers 
 
-+ In other cases, we want to encourage users to interact with the data either through dashboards (e.g., 
++ In other cases, we want to encourage users to **interact with data**, either through dashboards (e.g., 
 [CO](https://edx.cde.state.co.us/SchoolView/DataCenter/reports.jspx),
 [CA](https://www.cde.ca.gov/ta/ac/cm/), 
 [NYC](https://tools.nycenet.edu/), 
@@ -90,7 +93,7 @@ Shiny (e.g., see this [simple example](https://www.lexjansen.com/pharmasug-cn/20
 
 #  Motivation: A Third Use Case 
 
-+ In this final case, the full complexities of multiple analysis may need to be captured (e.g., a larger set of connected write ups):
++ In this final case, the **full complexities of multiple analysis** may need to be captured (e.g., a larger set of connected write ups):
 	+ Well structured across numerous write ups
 	+ Contain multiple comparisons supported through multiple analyses
 	+ Meant to provide a balance between structured and DIY storytelling  
@@ -99,18 +102,18 @@ Shiny (e.g., see this [simple example](https://www.lexjansen.com/pharmasug-cn/20
 + One way to implement this approach is by binding up the multiple write ups from multiple analyses (captured in individual . rmds ) into a larger book via the [bookdown](https://bookdown.org/yihui/rmarkdown/books.html) package.
 
 ---
-```{r pages_to_book, out.width='120%', fig.align='center', echo=FALSE, eval = TRUE}
+<br><br><br>
+```{r pages_to_book, fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/pages_to_book.png")
 ```
 
 ---
-
-```{r example_workbook, out.width='120%', fig.align='center', echo=FALSE, eval = TRUE}
+<br><br><br>
+```{r example_workbook, fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/example_workbook.png")
 ```
 
 ---
-
 
 #  Implementation  
 
@@ -123,25 +126,30 @@ magick::image_read("Figs/example_workbook.png")
 #  Considerations 
 
 This approach may be particularly useful:
-+ For analyses that are iteratively updated and shared (e.g., a workbook for state data analysis; annual psychometric analyses)
++ For analyses that are **iteratively updated** and **shared** (e.g., a workbook for state data analysis; annual psychometric analyses)
+--
 + As a space to share final analyses, after all the messy, iterative work has been done
+
+---
+
+layout: true
+class: inverse, bottom
 
 ---
 
 #  Supplemental Materials 
 
-
-
 ---
+
+layout: false
+
 #  Some Orienting References 
 
-+ Educational Data Mining (Romero & Ventura, 2010 ; Baker & Yacef, 2009; Pena-Ayala, 2014 ; Dutt, Ismail, & Herawan , 2017 )
-	+ Learning Analytics (Ferguson, 2012 ; Verbert et al., 2013 )
-		+ Higher Education
-		+ Distance Learning
-	+ Data-Driven Documents (Bostock, Ogievetsky , & Heer , 2011 )
-	+ Data-Driven Decision Making (Marsh, Pane, & Hamilton, 2006 )
++ Educational Data Mining ([Romero & Ventura, 2010](https://ieeexplore.ieee.org/document/5524021); [Baker & Yacef, 2009; Pena-Ayala, 2014](https://jedm.educationaldatamining.org/index.php/JEDM/article/view/8); [Dutt, Ismail, & Herawan , 2017](https://ieeexplore.ieee.org/abstract/document/7820050))
+	+ Learning Analytics ([Ferguson, 2012](http://oro.open.ac.uk/36374/1/IJTEL40501_Ferguson%20Jan%202013.pdf); [Verbert et al., 2013](https://journals.sagepub.com/doi/abs/10.1177/0002764213479363))
+	+ Data-Driven Documents ([Bostock, Ogievetsky , & Heer , 2011](https://ieeexplore.ieee.org/abstract/document/6064996))
+	+ Data-Driven Decision Making ([Marsh, Pane, & Hamilton, 2006](https://www.rand.org/pubs/occasional_papers/OP170.html))
 	+ Data Visualization
-		+ Classics (Cleveland , 1994 ; Tufte , 2001 )
-		+ Modern (Few, 2013 ; Nussbaumer-Knaflic , 2015 )
-	+ State Report Cards (Curl & Peltzman , 2017)
+		+ Classics ([Cleveland , 1994](https://www.amazon.com/Elements-Graphing-Data-William-Cleveland/dp/0963488414); [Tufte , 2001](https://www.edwardtufte.com/tufte/books_vdqi))
+		+ Modern ([Few, 2013](http://www.stephen-few.com/idd.php); [Nussbaumer-Knaflic , 2015](http://www.storytellingwithdata.com/book))
+	+ State Report Cards ([Curl & Peltzman , 2017](http://www.ccsso.org/sites/default/files/2017-11/CCSSO%20Reporting%20Best%20Practice%20Resource.pdf))
