@@ -10,7 +10,7 @@ date: "`r toOrdinal::toOrdinalDate(Sys.Date())`"
 ```{r, echo = FALSE}
     xaringanExtra::embed_xaringan(
     url = '../../presentations/Building_and_Distributing_R_Packages_Using_GitHub.html',
-    ratio = "4:3",
+    ratio = "16:9",
     max_width = 800
     )
 ```
@@ -19,7 +19,7 @@ date: "`r toOrdinal::toOrdinalDate(Sys.Date())`"
 <br>
 <br>
 
-## Web-Based Distribution of Research using GitHub 
+## Web-Based Distribution of Research using GitHub
 
 ```{r, echo = FALSE}
     xaringanExtra::embed_xaringan(

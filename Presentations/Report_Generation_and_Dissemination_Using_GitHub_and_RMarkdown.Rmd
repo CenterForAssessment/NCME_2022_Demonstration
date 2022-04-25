@@ -17,12 +17,7 @@ output:
 class: inverse, center, middle
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, dev = "svg", warning = FALSE, message = FALSE, eval = FALSE)
 options(htmltools.dir.version = FALSE, eval = FALSE)
-```
-
-```{r broadcast, echo=FALSE}
-xaringanExtra::use_broadcast()
 ```
 
 ```{r share-again, echo=FALSE}
@@ -53,6 +48,10 @@ xaringanExtra::use_tile_view()
 
 ```{r xaringanExtra-clipboard, echo=FALSE}
 xaringanExtra::use_clipboard()
+```
+
+```{r knitr-options-set, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, dev = "svg", warning = FALSE, message = FALSE, eval = FALSE)
 ```
 
 #  Flexible Report Generation

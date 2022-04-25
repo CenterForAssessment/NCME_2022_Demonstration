@@ -61,4 +61,15 @@ the r [bookdown](https://bookdown.org/yihui/rmarkdown/books.html) package to hou
 This approach may work well for projects that involve a number of interconnected analyses that need to be
 run regularly. For example, state educational agencies could use this approach to house a series of analyses that are 
 run and expanded on annually. Similarly, this approach could be used to house regular psychometric analyses conducted 
-on annual test data. 
+on annual test data.
+
+---
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
