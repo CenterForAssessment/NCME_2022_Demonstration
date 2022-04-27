@@ -3,18 +3,52 @@ title: "Flexible Report Generation and Dissemination"
 subtitle: "Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research"
 institute: "Center for Assessment"
 author: "Adam VanIwaarden"
-date: "April 21st, 2022 (updated: `r toOrdinal::toOrdinalDate(Sys.Date())`)"
+date: "`r toOrdinal::toOrdinalDate(Sys.Date())`<br>NCME 2022 Annual Meeting"
 output:
   xaringan::moon_reader:
+    seal: false
+    css: [default, 'assets/css/cfa_theme_a.css', 'assets/css/cfa-fonts.css']
     lib_dir: libs
     nature:
+      ratio: 16:9
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      titleSlideClass: ["center", "middle", "my-title"]
+      # titleSlideClass: ["center", "middle", "my-title"]
+---
+class: center, middle, title-slide
+background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-size: contain
+
+.title[
+# `r rmarkdown::metadata$title`
+]
+.subtitle[
+## `r rmarkdown::metadata$subtitle`
+]
+.author[
+### `r rmarkdown::metadata$author`
+]
+.institute[
+### `r rmarkdown::metadata$institute`
+]
+.date[
+### `r toOrdinal::toOrdinalDate(Sys.Date())`<br />NCME 2022 Annual Meeting
+]
+
+---
+layout: true
+
+<!--this adds the footer to all slides, depends on footer class in css-->
+<div class="footer" style="left: 5%;"><img src="assets/img/cc.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
+<div class="footer" style="left: 7.5%;"><img src="assets/img/by.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
+<div class="footer" style="left: 45%;"><a class="footer" href="http://www.nciea.org">www.nciea.org</a></div>
 
 ---
 class: inverse, center, middle
+background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-size: contain
+
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, eval = FALSE)
@@ -35,11 +69,16 @@ xaringanExtra::style_share_again(
 ```{r xaringan-logo, echo=FALSE}
 xaringanExtra::use_logo(
   image_url = "https://centerforassessment.github.io/assets/favicon.png",
-  width = "55px",
-  height = "64px",
+  width = "86px",
+  height = "100px",
   position = xaringanExtra::css_position(top = "0.5em", right = "0.5em"),
   link_url = "https://www.nciea.org"
 )
+```
+
+```{r slide-tone, echo=FALSE}
+# enabling audible tone for slide transitions (accessability for vision impared)
+xaringanExtra::use_slide_tone()
 ```
 
 ```{r xaringan-tile-view, echo=FALSE}
@@ -56,35 +95,23 @@ knitr::opts_chunk$set(echo = TRUE, dev = "svg", warning = FALSE, message = FALSE
 
 #  Flexible Report Generation
 
---
-
-   (and Dissemination...)
-
---
-
 ---
 
-##  Why be flexible?
+#  Why be flexible?
 
 --
-
-
 
 If a reporting workflow isn't broke... why change it?
 
 --
 
-
-
-
 * Upfront costs of time and effort:
   - HURTS!
   - But will pay dividends in streamlined, efficient workflow.
 
-
 ---
 
-##  What is flexibility?
+#  What is flexibility?
 
 --
 
@@ -104,10 +131,16 @@ directions.
 
 ---
 
-##  Demonstration, please!
+#  Demonstration, please!
 
-* I took this demonstration as an opportunity to
+--
+
+* I took this demonstration as an opportunity to:
+
+--
   - show how we used flexibility while investigating COVID impact
+
+--
   - revisiting and improving that workflow
 
 --
@@ -116,20 +149,20 @@ directions.
   - typical/annual analyses
   - new analytic approaches
   - reporting
-
 --
+* <hr />
 
 If a reporting workflow isn't broke... why change it?
-
---
 
 ???
 
 What started out as reason for choosing this path for became an existential question.
 It was a painful experience and its still a work in progress, but I'm growing and getting better/stronger/wiser...
----
 
-##  Demonstration, please!
+---
+class: highlight-last-item
+
+#  Demonstration, please!
 
 The [NCME_2022_Project repo](https://github.com/CenterForAssessment/NCME_2022_Project)
 has two main components.
@@ -139,24 +172,25 @@ has two main components.
 * Typical (for us) data analysis
 
 --
-
   - In part because we need results to report on...
 
 --
-
   - More importantly, simultaneous analysis and reporting
-    - atypical (for us)
+    + atypical (for us)
 
 --
-
 * Complete workflow of (post-initial) data analysis and reporting
 
 --
-
   - 5 steps to flexible, extensible reporting.
+
+--
+* <hr />
 
 ---
 class: inverse, center, middle
+background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-size: contain
 
 # Key Concepts
 
@@ -184,33 +218,31 @@ By "universal", we mean elements that can (and often should) be used in all case
 Custom = right tool for the right job.
 
 ---
+class: highlight-last-item
 
-##  Universal vs Custom Content
-
-How to proceed
+#  Universal vs Custom Content
 
 --
-
 * Make structure and format universal from the beginning
   - data & object naming conventions
   - data structures (tables and lists)
   - file organization
 
 --
-
 * Make your code (`R` and `.Rmd`) flexible from the beginning
   - allow for the idiosyncratic to be universal
 
 --
-
 * ***parameterization***
   - Applies to data, text and code.
   - combines both automation and flexibility
     - universal elements with specific application
+--
+* <hr />
 
 ---
 
-##  Universal & Custom Content
+#  Universal & Custom Content
 
 * parameterization
   - small bits of information define how results are rendered
@@ -221,13 +253,12 @@ How to proceed
     - whole sections
 
 ---
+class: highlight-last-item
 
-##  R Markdown
+#  R Markdown
 
 This is NOT a demonstration for beginners.
-
 --
-
 * Assumptions
   - familiar and comfortable with data wrangling and analysis in `R`
   - some experience rendering (`knit`ing) documents based on R markdown
@@ -235,74 +266,110 @@ This is NOT a demonstration for beginners.
     here is meant to be run from the console and/or `source()`d in.
     - Just say no to the `knit` button!
     - But I do give a shortcut in running all the code expeditiously ;-)
-
 --
 
 * If you are a beginner, [start reading](https://bookdown.org/yihui/rmarkdown-cookbook/)
   and practicing, and then circle back to these resources. There are many tutorials
   and examples to get started with online.
+--
+
+* <hr />
 
 ---
+class: highlight-last-item
 
-##  R Markdown
+#  R Markdown
 
+--
 * Rendering packages and output formats
 
 --
   - This demonstration deals almost exclusively with reports generated with
     [`pagedown` package](https://github.com/rstudio/pagedown) templates and output.
+
+--
       - Developed by Yihui Xi and Romain Lesur (mainly), based on [`paged.js`](https://pagedjs.org/documentation/),
         to "paginate the HTML output of R Markdown with CSS for print". I.e., a
         sexier alternative to `LaTeX`.
+
+--
       - This means we end up with a printable, self-contained HTML file and a
         PDF version of our reports.
 
 --
+* <hr />
+
+---
+class: highlight-last-item
+
+#  R Markdown
+
+--
 
   - We deal (abstractly and briefly) with creating a `bookdown` website.
-
 --
 
   - Any output format is possible with the base content/scripts we provide/create.
     It (usually) just requires new YAML frontmatter or provided arguments to `rmarkdown::render`.
-
 --
 
-    - some big exceptions for:
-      * internal environments and working directories
-      * asset location expectations
+  - some big exceptions for:
+    * internal environments and working directories
+    * asset location expectations
+
+--
+  - <hr />
 
 ---
+class: highlight-last-item
 
-##  R Markdown
+#  R Markdown
 
 Back to...
 
 --
+
 * parameterization
+
+--
   - `params` is a special object in `rmarkdown`
   - can be a named list/object that is available before you render
   - supplied in the YAML
   - used to provide bits of data, text, logic, etc.
 --
 
+* <hr />
+
+---
+class: highlight-last-item
+
+#  R Markdown
+
 And on to...
 
 --
+
 * [parent and child Rmd documents](https://bookdown.org/yihui/rmarkdown-cookbook/child-document.html)
+
+--
   - creates a more manageable, "master" document
-    - but the kids *can* be unwieldy at first
+    + but the kids *can* be unwieldy at first
   - division of labor
   - build (and refine) in small pieces
+--
+
+* <hr />
 
 ---
 class: inverse, center, middle
+background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-size: contain
 
 #  (My) Generation
 
 ---
 
-## Git a copy for free
+# Git a copy for free
 
 You can either fork or download a copy of the [repo from GitHub,](https://github.com/CenterForAssessment/NCME_2022_Project)
 or do a direct download from `R`:
@@ -331,32 +398,40 @@ to create those yourself! Or look at the "Documentation" menu of the
 [NCME_2022_Demonstration website.](https://centerforassessment.github.io/NCME_2022_Demonstration/index.html)
 
 ---
-##  State A
+class: highlight-last-item
 
-* represents the various stages of our analysis and reporting efforts
-* typically located in different areas of our work environments
+#  State A
+
+This represents the various stages of our analysis and reporting efforts, typically 
+located in different areas of our work environments.
 
 --
-
-* **Initial_Data_Analysis** - typical annual data analysis
+* **Initial_Data_Analysis** is our typical annual data analysis
   - clean and prepare data
   - calculate Student Growth Percentiles (SGPs)
     - confidential student data (housed securely)
     - `R` scripts (shared openly on Github)
 
 --
+* <hr />
 
-* **Report_Analyses** - investigate academic impact.
+---
+
+#  State A
+
+--
+
+* **Report_Analyses** we investigate academic impact.
   - Typically in the "Documentation" directory/repo, but placed here for emphasis/differentiation.
 
 --
 
 * **Documentation**
-  - R Markdown based code, content and assets for generating reports.
-  - Typically a separate Github repo (with final reports
+  - R Markdown based code, content and assets for generating reports
+  - Typically a separate Github repo (with final reports)
   - ***This is the heart of "Flexible Report Generation"***
-
 --
+* <hr />
 
 ???
 
@@ -372,39 +447,53 @@ Eventually there will be a 4th directory
   - housed outside of any Github repo
 
 ---
+class: highlight-last-item
 
-##  State A analysis and reporting workflow
+#  State A analysis and reporting workflow
 
-* Option 1)
-  - Go through the directories in the order presented above
-
---
-
-* Initial_Data_Analysis:
-  - Run the `R` scripts like you normally would.
-    - start with the data prep ("State_A_Data_LONG.R")
-    - move on to "State_A_Baseline_SGP_Analyses.R"
+Option 1) - Go through the directories in the order presented above
 
 --
 
-* The code is *heavily* commented in a format that you might be unfamiliar with
-  (`Roxygen`).
+Initial_Data_Analysis:
 
 --
 
-  - Allows you to document your work as you go
-    - Turn `R` code into working paper
-      * Can be executed/sourced like normal code
-      * or [`spin`](https://bookdown.org/yihui/rmarkdown-cookbook/spin.html) it into a parent/child
+* Run the `R` scripts like you normally would.
+  - start with the data prep ("State_A_Data_LONG.R")
+  - move on to "State_A_Baseline_SGP_Analyses.R"
+
 --
-    - These scripts eventually get used directly in the report generation process
-      as [child-like documents](https://yihui.org/en/2021/06/spin-child/). The data
-      is analyzed and documented (in and appendix) simultaneously.
+* <hr />
 
 ---
+class: highlight-last-item
 
-##  State A analysis and reporting workflow
+#  State A analysis and reporting workflow
 
+The code is *heavily* commented in a format that you might be unfamiliar with (`Roxygen`).
+
+--
+
+* Allows you to document your work as you go
+  - Turn `R` code into working paper
+
+--
+    + Can be executed/sourced like normal code
+    + or [`spin`](https://bookdown.org/yihui/rmarkdown-cookbook/spin.html) it into a parent/child
+--
+  - These scripts eventually get used directly in the report generation process
+    as [child-like documents](https://yihui.org/en/2021/06/spin-child/). The data
+    is analyzed and documented (in and appendix) simultaneously.
+--
+* <hr />
+
+---
+class: highlight-last-item
+
+#  State A analysis and reporting workflow
+
+--
 * Report Analyses:
 
 --
@@ -412,17 +501,23 @@ Eventually there will be a 4th directory
   - These will be run as part of...
 
 --
-
 * Documentation:
+
+--
+
   - 5 steps through data analysis and report generation.
-    * 5 scripts to guide you through
-      - Report analyses are done as part of step 3
+
+--
+      + 5 scripts to guide you through
+      + Report analyses are done as part of step 3
+
+--
+* <hr />
 
 ---
+class: highlight-last-item
 
 ##  State A reporting in 5 steps
-
-Just FYI, we're still under option 1...
 
 --
 
@@ -442,30 +537,39 @@ Just FYI, we're still under option 1...
   - report-specific analyses
   - may be time consuming and/or require evaluation before reporting
 
+--
+
+* <hr />
+
 ---
+class: highlight-last-item
 
 ##  State A reporting in 5 steps
+
+--
 
 * `4_Make_Configs.R`
   - create custom configuration lists that identify
 
 --
-    1. state specific meta-data and report parameters and
---
-    2. custom Rmarkdown content to be used in place of, or in addition to, the
-       universal report content.
-
+      1. state specific meta-data and report parameters and
+      2. custom Rmarkdown content to be used in place of, or in addition to, the
+         universal report content.
 --
 
 * `5_Make_Report.R`
   - FINALLY!
   - `R` code to render reports using `pagedown` templates
   - workable scripts to create a`bookdown` website
+--
+
+* <hr />
+
 ---
 
-##  State A analysis and reporting workflow
+#  State A analysis and reporting workflow
 
-Option 2) Cut to the chase
+Option 2) - Cut to the chase
 
 --
 
@@ -479,9 +583,10 @@ Option 2) Cut to the chase
 * So 5 steps become 2 steps ...
 
 ---
-##  State A analysis and reporting workflow
 
-Option 2) Cut to the chase
+#  State A analysis and reporting workflow
+
+Option 2) - Cut to the chase
 
 --
 
@@ -503,53 +608,20 @@ errors.
 
 ##  Format comparisons
 
-``` {r cover_page1, out.width='50%', fig.align='center', echo=FALSE, eval = TRUE}
-magick::image_read("Figs/wp_cover.png")
-```
+<img src="Figs/wp_cover.png" width="30%">
+<img src="Figs/pgdrpt_cover.png" width="30%">
+<img src="Figs/nciea_cover.png" width="33%">
 
 ---
 
 ##  Format comparisons
 
-``` {r cover_page2, out.width='50%', fig.align='center', echo=FALSE, eval = TRUE}
-magick::image_read("Figs/pgdrpt_cover.png")
-```
----
-
-##  Format comparisons
-
-``` {r cover_page3, out.width='50%', fig.align='center', echo=FALSE, eval = TRUE}
-magick::image_read("Figs/nciea_cover.png")
-```
+<img src="Figs/pgdrpt_quad1.png" width="33%">
+<img src="Figs/nciea_quad1.png" width="36%">
 
 ---
 
 ##  Format comparisons
 
-``` {r quad_layout1, out.width='50%', fig.align='center', echo=FALSE, eval = TRUE}
-magick::image_read("Figs/pgdrpt_quad1.png")
-```
-
----
-
-##  Format comparisons
-
-``` {r quad_layout2, out.width='50%', fig.align='center', echo=FALSE, eval = TRUE}
-magick::image_read("Figs/nciea_quad1.png")
-```
-
----
-
-##  Format comparisons
-
-``` {r quad_layout3, out.width='50%', fig.align='center', echo=FALSE, eval = TRUE}
-magick::image_read("Figs/pgdrpt_quad2.png")
-```
-
----
-
-##  Format comparisons
-
-``` {r quad_layout4, out.width='50%', fig.align='center', echo=FALSE, eval = TRUE}
-magick::image_read("Figs/nciea_quad2.png")
-```
+<img src="Figs/pgdrpt_quad2.png" width="33%">
+<img src="Figs/nciea_quad2.png" width="36%">
