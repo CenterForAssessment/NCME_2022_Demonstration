@@ -18,14 +18,14 @@
     <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
     <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
-    <link rel="stylesheet" href="assets/css/cfa_theme_a.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/cfa-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="libs/cfa_assets/css/cfa-a.css" type="text/css" />
+    <link rel="stylesheet" href="libs/cfa_assets/css/cfa-a-fonts.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 
 class: center, middle, title-slide
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
 
 .title[
@@ -41,21 +41,23 @@ background-size: contain
 ### Center for Assessment
 ]
 .date[
-### April 27th, 2022&lt;br /&gt;NCME 2022 Annual Meeting
+### April 29th, 2022&lt;br /&gt;NCME 2022 Annual Meeting
 ]
 
 ---
 layout: true
 
 &lt;!--this adds the footer to all slides, depends on footer class in css--&gt;
-&lt;div class="footer" style="left: 5%;"&gt;&lt;img src="assets/img/cc.svg" style = "max-width: 40%; opacity: 0.5;"&gt;&lt;/img&gt;&lt;/div&gt;
-&lt;div class="footer" style="left: 7.5%;"&gt;&lt;img src="assets/img/by.svg" style = "max-width: 40%; opacity: 0.5;"&gt;&lt;/img&gt;&lt;/div&gt;
+&lt;div class="footer" style="left: 5%;"&gt;&lt;img src="libs/cfa_assets/img/cc.svg" style = "max-width: 40%; opacity: 0.5;"&gt;&lt;/img&gt;&lt;/div&gt;
+&lt;div class="footer" style="left: 7.5%;"&gt;&lt;img src="libs/cfa_assets/img/by.svg" style = "max-width: 40%; opacity: 0.5;"&gt;&lt;/img&gt;&lt;/div&gt;
 &lt;div class="footer" style="left: 45%;"&gt;&lt;a class="footer" href="http://www.nciea.org"&gt;www.nciea.org&lt;/a&gt;&lt;/div&gt;
 
 ---
 class: inverse, center, middle
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
+
+
 
 
 
@@ -170,8 +172,6 @@ directions.
   - typical/annual analyses
   - new analytic approaches
   - reporting
---
-* &lt;hr /&gt;
 
 If a reporting workflow isn't broke... why change it?
 
@@ -210,7 +210,7 @@ has two main components.
 
 ---
 class: inverse, center, middle
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
 
 # Key Concepts
@@ -274,27 +274,22 @@ class: highlight-last-item
     - whole sections
 
 ---
-class: highlight-last-item
 
 #  R Markdown
 
 This is NOT a demonstration for beginners.
+
 --
 * Assumptions
   - familiar and comfortable with data wrangling and analysis in `R`
   - some experience rendering (`knit`ing) documents based on R markdown
   - I don't care if you use Rstudio, but I don't (usually) and the code
     here is meant to be run from the console and/or `source()`d in.
-    - Just say no to the `knit` button!
-    - But I do give a shortcut in running all the code expeditiously ;-)
+    + But I do give a shortcut in running all the code expeditiously ;-)
 --
-
 * If you are a beginner, [start reading](https://bookdown.org/yihui/rmarkdown-cookbook/)
   and practicing, and then circle back to these resources. There are many tutorials
   and examples to get started with online.
---
-
-* &lt;hr /&gt;
 
 ---
 class: highlight-last-item
@@ -383,7 +378,7 @@ And on to...
 
 ---
 class: inverse, center, middle
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
 
 #  (My) Generation
@@ -631,23 +626,23 @@ errors.
 
 ##  Format comparisons
 
-&lt;img src="Figs/wp_cover.png" width="30%"&gt;
-&lt;img src="Figs/pgdrpt_cover.png" width="30%"&gt;
-&lt;img src="Figs/nciea_cover.png" width="33%"&gt;
+&lt;img src="libs/cfa_assets/fig/wp_cover.png" width="30%"&gt;
+&lt;img src="libs/cfa_assets/fig/pgdrpt_cover.png" width="30%"&gt;
+&lt;img src="libs/cfa_assets/fig/nciea_cover.png" width="33%"&gt;
 
 ---
 
 ##  Format comparisons
 
-&lt;img src="Figs/pgdrpt_quad1.png" width="33%"&gt;
-&lt;img src="Figs/nciea_quad1.png" width="36%"&gt;
+&lt;img src="libs/cfa_assets/fig/pgdrpt_quad1.png" width="33%"&gt;
+&lt;img src="libs/cfa_assets/fig/nciea_quad1.png" width="36%"&gt;
 
 ---
 
 ##  Format comparisons
 
-&lt;img src="Figs/pgdrpt_quad2.png" width="33%"&gt;
-&lt;img src="Figs/nciea_quad2.png" width="36%"&gt;
+&lt;img src="libs/cfa_assets/fig/pgdrpt_quad2.png" width="33%"&gt;
+&lt;img src="libs/cfa_assets/fig/nciea_quad2.png" width="36%"&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
