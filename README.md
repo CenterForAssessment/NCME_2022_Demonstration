@@ -30,6 +30,8 @@ has many advantages, including
 
 The repo containing the package skeleton is located [here](https://github.com/dbetebenner/customizedPackageForR).
 
+The presentation for the session is located [here](https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Building_and_Distributing_R_Packages_Using_GitHub.html#1)
+
 ## Web-Based Distribution of Research using GitHub [@alliecooperman](https://github.com/alliecooperman)
 
 GitHub allows users to collate their analyses into a user-friendly, distribution-ready website.
