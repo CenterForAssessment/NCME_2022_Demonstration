@@ -10,7 +10,7 @@ output:
     css: [default, 'assets/css/cfa_theme_a.css', 'assets/css/cfa-fonts.css']
     lib_dir: libs
     nature:
-      ratio: 16:9
+      ratio: "16:9"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
