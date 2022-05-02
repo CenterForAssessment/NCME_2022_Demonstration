@@ -7,7 +7,7 @@ date: "`r toOrdinal::toOrdinalDate(Sys.Date())`<br>NCME 2022 Annual Meeting"
 output:
   xaringan::moon_reader:
     seal: false
-    css: [default, 'assets/css/cfa_theme_a.css', 'assets/css/cfa-fonts.css']
+    css: [default, libs/cfa_assets/css/cfa-a.css, libs/cfa_assets/css/cfa-a-fonts.css]
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -17,7 +17,7 @@ output:
       # titleSlideClass: ["center", "middle", "my-title"]
 ---
 class: center, middle, title-slide
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
 
 .title[
@@ -40,18 +40,39 @@ background-size: contain
 layout: true
 
 <!--this adds the footer to all slides, depends on footer class in css-->
-<div class="footer" style="left: 5%;"><img src="assets/img/cc.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
-<div class="footer" style="left: 7.5%;"><img src="assets/img/by.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
+<div class="footer" style="left: 5%;"><img src="libs/cfa_assets/img/cc.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
+<div class="footer" style="left: 7.5%;"><img src="libs/cfa_assets/img/by.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
 <div class="footer" style="left: 45%;"><a class="footer" href="http://www.nciea.org">www.nciea.org</a></div>
 
 ---
 class: inverse, center, middle
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
 
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, eval = FALSE)
+```
+
+```{r cfa_extra, echo=FALSE, warning=FALSE}
+# VERY cludgy at this point. All asset paths (except R code - not copied) 
+# need to be set as `libs/cfa_assets/...` in the .Rmd YAML and text.
+# This code then copies them there from ./Presentations/cfa_assets
+# NOTE: This wouldn't be necessary if 1) self_contained = FALSE (not smart/too big)
+# or 2) presentation not moved as it is under `build_presentations`.
+source("cfa_assets/R/xaringan_cfa.R")
+xaringan_cfa(
+  theme = "cfa-a", # default -&- only choice :-)
+  img = TRUE, # c("CFA_Logo_alpha_07.svg", "cc.svg", "by.svg"), # copies all... can we subset?
+  asset_dir = "cfa_assets")
+
+# Direct use for figures not wrapped in `knitr` chunks
+# assign to fig.cp to suppress output. 
+# Gives warning about directory not existing, but they get copied anyway...
+my_figs <- htmltools::htmlDependency(
+  "fig", "0.0.1", "cfa_assets/fig",
+  all_files = TRUE)
+fig.cp <- htmltools::copyDependencyToDir(my_figs, "libs/cfa_assets", mustWork = TRUE)
 ```
 
 ```{r share-again, echo=FALSE}
@@ -149,8 +170,6 @@ directions.
   - typical/annual analyses
   - new analytic approaches
   - reporting
---
-* <hr />
 
 If a reporting workflow isn't broke... why change it?
 
@@ -189,7 +208,7 @@ has two main components.
 
 ---
 class: inverse, center, middle
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
 
 # Key Concepts
@@ -253,27 +272,22 @@ class: highlight-last-item
     - whole sections
 
 ---
-class: highlight-last-item
 
 #  R Markdown
 
 This is NOT a demonstration for beginners.
+
 --
 * Assumptions
   - familiar and comfortable with data wrangling and analysis in `R`
   - some experience rendering (`knit`ing) documents based on R markdown
   - I don't care if you use Rstudio, but I don't (usually) and the code
     here is meant to be run from the console and/or `source()`d in.
-    - Just say no to the `knit` button!
-    - But I do give a shortcut in running all the code expeditiously ;-)
+    + But I do give a shortcut in running all the code expeditiously ;-)
 --
-
 * If you are a beginner, [start reading](https://bookdown.org/yihui/rmarkdown-cookbook/)
   and practicing, and then circle back to these resources. There are many tutorials
   and examples to get started with online.
---
-
-* <hr />
 
 ---
 class: highlight-last-item
@@ -362,7 +376,7 @@ And on to...
 
 ---
 class: inverse, center, middle
-background-image: url(assets/img/CFA_Logo_alpha_07.svg)
+background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
 background-size: contain
 
 #  (My) Generation
@@ -608,20 +622,20 @@ errors.
 
 ##  Format comparisons
 
-<img src="Figs/wp_cover.png" width="30%">
-<img src="Figs/pgdrpt_cover.png" width="30%">
-<img src="Figs/nciea_cover.png" width="33%">
+<img src="libs/cfa_assets/fig/wp_cover.png" width="30%">
+<img src="libs/cfa_assets/fig/pgdrpt_cover.png" width="30%">
+<img src="libs/cfa_assets/fig/nciea_cover.png" width="33%">
 
 ---
 
 ##  Format comparisons
 
-<img src="Figs/pgdrpt_quad1.png" width="33%">
-<img src="Figs/nciea_quad1.png" width="36%">
+<img src="libs/cfa_assets/fig/pgdrpt_quad1.png" width="33%">
+<img src="libs/cfa_assets/fig/nciea_quad1.png" width="36%">
 
 ---
 
 ##  Format comparisons
 
-<img src="Figs/pgdrpt_quad2.png" width="33%">
-<img src="Figs/nciea_quad2.png" width="36%">
+<img src="libs/cfa_assets/fig/pgdrpt_quad2.png" width="33%">
+<img src="libs/cfa_assets/fig/nciea_quad2.png" width="36%">
