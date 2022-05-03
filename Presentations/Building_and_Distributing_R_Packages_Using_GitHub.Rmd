@@ -24,7 +24,7 @@ background-size: contain
 library(metathis)
 meta() %>%
   meta_general(
-    description = "NCME 2022 Demonstration Presentation",
+    description = "Building & Distributing R Packages Using GitHub • NCME 2022 • Damian Betebenner",
     subject = "Building and Distributing R Packages Using GitHub",
     generator = "xaringan and remark.js",
     theme_color = "#b6e202"
@@ -33,12 +33,14 @@ meta() %>%
   meta_social(
     title = "Building & Distributing R Packages Using GitHub | NCME 2022 | Damian Betebenner",
     url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#using-github-to-build-distribute-r-packages",
-    image = "https://github.com/CenterForAssessment/NCME_2022_Demonstration/raw/main/docs/presentations/assets/img/coverImageSlide_Building_Distributing.png",
-    image_alt = "Title slide for the talk presentation",
+    image = "assets/img/coverImageSlide_Building_Distributing.png",
+    image_alt = "Title slide for Building & Distributin R Packages Using GitHub presentation",
     og_type = "website",
+    og_locale = "en_US",
     og_author = "Damian Betebenner",
     twitter_card_type = "summary_large_image",
-    twitter_creator = "@dbetebenner"
+    twitter_creator = "@dbetebenner",
+    twitter_site = "@dbetebenner"
   )
 ```
 
@@ -59,7 +61,7 @@ meta() %>%
 ### `r toOrdinal::toOrdinalDate(Sys.Date())`<br />NCME 2022 Annual Meeting
 ]
 ```{r setup, include=FALSE, echo=FALSE}
-    library(xaringan)
+    require(xaringanExtra)
     options(htmltools.dir.version = FALSE)
     use_share_again()
     style_share_again(
