@@ -61,6 +61,10 @@ meta() %>%
 ### `r toOrdinal::toOrdinalDate(Sys.Date())`<br />NCME 2022 Annual Meeting
 ]
 ```{r setup, include=FALSE, echo=FALSE}
+    xaringanExtra::use_share_again()
+
+```
+```{r setup, include=FALSE, echo=FALSE}
     require(xaringanExtra)
     options(htmltools.dir.version = FALSE)
     use_share_again()
