@@ -59,21 +59,22 @@ meta() %>%
 ### `r toOrdinal::toOrdinalDate(Sys.Date())`<br />NCME 2022 Annual Meeting
 ]
 ```{r setup, include=FALSE, echo=FALSE}
+    library(xaringan)
     options(htmltools.dir.version = FALSE)
-    xaringanExtra::use_share_again()
-    xaringanExtra::style_share_again(
+    use_share_again()
+    style_share_again(
       share_buttons = c("twitter"),
       background = "#009C49",
       foreground = "#FFFFFF"
     )
-    xaringanExtra::use_logo(
+    use_logo(
       image_url = "https://centerforassessment.github.io/assets/CenterForAssessment_LOGO.svg",
       position = xaringanExtra::css_position(top = "0.5em", right = "0.5em"),
       width = "150px",
       link_url = "https://www.nciea.org"
     )
-    xaringanExtra::use_tile_view()
-    xaringanExtra::use_clipboard()
+    use_tile_view()
+    use_clipboard()
 ```
 
 <style>
