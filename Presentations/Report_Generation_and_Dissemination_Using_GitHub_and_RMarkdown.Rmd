@@ -3,112 +3,24 @@ title: "Flexible Report Generation and Dissemination"
 subtitle: "Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research"
 institute: "Center for Assessment"
 author: "Adam VanIwaarden"
-date: "`r toOrdinal::toOrdinalDate(Sys.Date())`<br>NCME 2022 Annual Meeting"
+# date: "`r toOrdinal::toOrdinalDate(Sys.Date())`<br>NCME 2022 Annual Meeting"
+date: >-
+  April 23rd, 2022
+
+  ```{r, github-corner, echo=FALSE, results='asis'}
+    cat(readLines(cfaDocs:::pkg_resource('rmd/cfa-octocat-corner.md'), warn=FALSE), sep = '\n')
+  ```
 output:
-  xaringan::moon_reader:
-    seal: false
-    css: [default, libs/cfa_assets/css/cfa-a.css, libs/cfa_assets/css/cfa-a-fonts.css]
-    lib_dir: libs
+  cfaDocs::cfaXaringan:
+    extras: !expr list(fig = 'cfa_assets/fig')
     nature:
-      ratio: "16:9"
+      ratio: 16:9
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      # titleSlideClass: ["center", "middle", "my-title"]
 ---
-class: center, middle, title-slide
-background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
-background-size: contain
 
-.title[
-# `r rmarkdown::metadata$title`
-]
-.subtitle[
-## `r rmarkdown::metadata$subtitle`
-]
-.author[
-### `r rmarkdown::metadata$author`
-]
-.institute[
-### `r rmarkdown::metadata$institute`
-]
-.date[
-### `r toOrdinal::toOrdinalDate(Sys.Date())`<br />NCME 2022 Annual Meeting
-]
-
----
-layout: true
-
-<!--this adds the footer to all slides, depends on footer class in css-->
-<div class="footer" style="left: 5%;"><img src="libs/cfa_assets/img/cc.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
-<div class="footer" style="left: 7.5%;"><img src="libs/cfa_assets/img/by.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
-<div class="footer" style="left: 45%;"><a class="footer" href="http://www.nciea.org">www.nciea.org</a></div>
-
----
 class: inverse, center, middle
-background-image: url(libs/cfa_assets/img/CFA_Logo_alpha_07.svg)
-background-size: contain
-
-
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE, eval = FALSE)
-```
-
-```{r cfa_extra, echo=FALSE, warning=FALSE}
-# VERY cludgy at this point. All asset paths (except R code - not copied) 
-# need to be set as `libs/cfa_assets/...` in the .Rmd YAML and text.
-# This code then copies them there from ./Presentations/cfa_assets
-# NOTE: This wouldn't be necessary if 1) self_contained = FALSE (not smart/too big)
-# or 2) presentation not moved as it is under `build_presentations`.
-source("cfa_assets/R/xaringan_cfa.R")
-xaringan_cfa(
-  theme = "cfa-a", # default -&- only choice :-)
-  img = TRUE, # c("CFA_Logo_alpha_07.svg", "cc.svg", "by.svg"), # copies all... can we subset?
-  asset_dir = "cfa_assets")
-
-# Direct use for figures not wrapped in `knitr` chunks
-# assign to fig.cp to suppress output. 
-# Gives warning about directory not existing, but they get copied anyway...
-my_figs <- htmltools::htmlDependency(
-  "fig", "0.0.1", "cfa_assets/fig",
-  all_files = TRUE)
-fig.cp <- htmltools::copyDependencyToDir(my_figs, "libs/cfa_assets", mustWork = TRUE)
-```
-
-```{r share-again, echo=FALSE}
-xaringanExtra::use_share_again()
-```
-
-```{r style-share-again, echo=FALSE}
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter"),
-  background = "#009C49",
-  foreground = "#FFFFFF"
-)
-```
-
-```{r xaringan-logo, echo=FALSE}
-xaringanExtra::use_logo(
-  image_url = "https://centerforassessment.github.io/assets/favicon.png",
-  width = "86px",
-  height = "100px",
-  position = xaringanExtra::css_position(top = "0.5em", right = "0.5em"),
-  link_url = "https://www.nciea.org"
-)
-```
-
-```{r slide-tone, echo=FALSE}
-# enabling audible tone for slide transitions (accessability for vision impared)
-xaringanExtra::use_slide_tone()
-```
-
-```{r xaringan-tile-view, echo=FALSE}
-xaringanExtra::use_tile_view()
-```
-
-```{r xaringanExtra-clipboard, echo=FALSE}
-xaringanExtra::use_clipboard()
-```
 
 ```{r knitr-options-set, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, dev = "svg", warning = FALSE, message = FALSE, eval = FALSE)
@@ -604,7 +516,7 @@ Option 2) - Cut to the chase
 
 --
 
-```{r}
+```{r, eval=FALSE}
 # Set working directory to "State_A/Documentation"
 setwd("NCME_2022_Project/All_States/State_A/Initial_Data_Analysis/")
 # Step 1 (if you haven't already)
