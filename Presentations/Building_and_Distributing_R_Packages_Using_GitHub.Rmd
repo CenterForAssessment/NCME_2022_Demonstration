@@ -60,14 +60,12 @@ meta() %>%
 .date[
 ### `r toOrdinal::toOrdinalDate(Sys.Date())`<br />NCME 2022 Annual Meeting
 ]
-```{r setup, include=FALSE, echo=FALSE}
+```{r setup1, include=FALSE, echo=FALSE}
     xaringanExtra::use_share_again()
-
 ```
-```{r setup, include=FALSE, echo=FALSE}
+```{r setup2, include=FALSE, echo=FALSE}
     require(xaringanExtra)
     options(htmltools.dir.version = FALSE)
-    use_share_again()
     style_share_again(
       share_buttons = c("twitter"),
       background = "#009C49",
