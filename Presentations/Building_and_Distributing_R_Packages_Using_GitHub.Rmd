@@ -33,7 +33,7 @@ meta() %>%
   meta_social(
     title = "Building & Distributing R Packages Using GitHub | NCME 2022 | Damian Betebenner",
     url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#using-github-to-build-distribute-r-packages",
-    image = "/presentations/coverImageSlide.png",
+    image = "https://github.com/CenterForAssessment/NCME_2022_Demonstration/raw/main/docs/presentations/assets/img/coverImageSlide_Building_Distributing.png",
     image_alt = "Title slide for the talk presentation",
     og_type = "website",
     og_author = "Damian Betebenner",
