@@ -24,14 +24,14 @@ background-size: contain
 library(metathis)
 meta() %>%
   meta_general(
-    description = "Building & Distributing R Packages Using GitHub • NCME 2022 • Damian Betebenner",
+    description = "The first presentation of the NCME 2022 Demonstration Session on Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research",
     subject = "Building and Distributing R Packages Using GitHub",
     generator = "xaringan and remark.js",
     theme_color = "#b6e202"
   ) %>% 
   meta_name("github-repo" = "centerforassessment/NCME_2022_Demonstration") %>% 
   meta_social(
-    title = "Building & Distributing R Packages Using GitHub | NCME 2022 | Damian Betebenner",
+    title = "Building & Distributing R Packages Using GitHub • NCME 2022 • Damian Betebenner",
     url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#using-github-to-build-distribute-r-packages",
     image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/assets/img/coverImageSlide_Building_Distributing.png",
     image_alt = "Title slide for Building & Distributin R Packages Using GitHub presentation",
