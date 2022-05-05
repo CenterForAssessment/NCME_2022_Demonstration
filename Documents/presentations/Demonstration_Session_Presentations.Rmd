@@ -24,7 +24,7 @@ date: "`r toOrdinal::toOrdinalDate(Sys.Date())`"
 ```{r, echo = FALSE}
     xaringanExtra::embed_xaringan(
     url = '../../presentations/Web_Based_Distribution_of_Research_Using_GitHub.html',
-    ratio = "4:3",
+    ratio = "16:9",
     max_width = 800
     )
 ```
@@ -38,7 +38,7 @@ date: "`r toOrdinal::toOrdinalDate(Sys.Date())`"
 ```{r, echo = FALSE}
     xaringanExtra::embed_xaringan(
     url = '../../presentations/Report_Generation_and_Dissemination_Using_GitHub_and_RMarkdown.html',
-    ratio = "4:3",
+    ratio = "16:9",
     max_width = 800
     )
 ```
@@ -52,7 +52,7 @@ date: "`r toOrdinal::toOrdinalDate(Sys.Date())`"
 ```{r, echo = FALSE}
     xaringanExtra::embed_xaringan(
     url = '../../presentations/Consolidating_Analysis_and_Dissemination_of_Research_Using_GitHub.html',
-    ratio = "4:3",
+    ratio = "16:9",
     max_width = 800
     )
 ```
