@@ -1,8 +1,8 @@
 ---
 title: "Flexible Report Generation and Dissemination with GitHub"
 subtitle: "Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research"
-institute: "Center for Assessment"
 author: "Adam VanIwaarden"
+institute: "Center for Assessment"
 date: >-
   April 23rd, 2022<br>NCME 2022 Annual Meeting<br>Demonstration Session
   
@@ -13,17 +13,13 @@ date: >-
 output:
   cfaDocs::cfaXaringan:
     cfa_theme: 'cfa-b'
+    theme_copy: false
     include: !expr list(
       footer = 'default',
       footer_text = 'Flexible Report Generation',
       xaringanExtra = 'default',
       xExtra_use = c('share_again', 'slide_tone', 'tile_view', 'clipboard'))
     extras: !expr list(fig = 'cfa_assets/fig')
-    nature:
-      ratio: 16:9
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
 ---
 
 class: inverse, center, middle
