@@ -5,22 +5,68 @@
     <meta charset="utf-8" />
     <meta name="author" content="Nathan Dadey" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="https://centerforassessment.github.io/assets/favicon.png" sizes="16x16">
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
     <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
     <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
-    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
-    <script src="libs/tile-view/tile-view.js"></script>
-    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
-    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+
+
+    <style>.shareagain-bar {
+    --shareagain-foreground: #FFFFFF;
+    --shareagain-background: #29a829;
+    --shareagain-facebook: none;
+    --shareagain-linkedin: none;
+    --shareagain-pinterest: none;
+    --shareagain-pocket: none;
+    --shareagain-reddit: none;
+    }</style>
+    <div>
+    <style type="text/css">.xaringan-extra-logo {
+    width: 86px;
+    height: 100px;
+    z-index: 0;
+    background-image: url(https://raw.githubusercontent.com/CenterForAssessment/cfaDocs/main/inst/rmarkdown/templates/xaringan/resources/img/CFA_Logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0.5em;right:0.5em;
+    }
+    </style>
+    <script>(function () {
+      let tries = 0
+      function addLogo () {
+        if (typeof slideshow === 'undefined') {
+          tries += 1
+          if (tries < 10) {
+            setTimeout(addLogo, 100)
+          }
+        } else {
+          document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+            .forEach(function (slide) {
+              const logo = document.createElement('a')
+              logo.classList = 'xaringan-extra-logo'
+              logo.href = 'https://www.nciea.org'
+              slide.appendChild(logo)
+            })
+        }
+      }
+      document.addEventListener('DOMContentLoaded', addLogo)
+    })()</script>
+    </div>
+    <link rel="stylesheet" href="libs/cfa_assets/css/cfa-a.css" type="text/css" />
+    <link rel="stylesheet" href="libs/cfa_assets/css/cfa-b-fonts.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
-class: center, middle, my-title, title-slide
+class: center, middle, inverse, title-slide
 
 .title[
 # Consolidating Analysis and Dissemination of Research using GitHub
@@ -35,64 +81,22 @@ class: center, middle, my-title, title-slide
 ### Center for Assessment
 ]
 .date[
-### April 23rd, 2022 (updated: May 5th, 2022)
+### April 23rd, 2022<br>NCME 2022 Annual Meeting<br>Demonstration Session
+<a href="https://github.com/CenterForAssessment/NCME_2022_Demonstration/blob/main/Consolidating_Analysis_and_Dissemination_of_Research_Using_GitHub.Rmd" target="_blank" class="github-corner" aria-label="View source on Github"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path class="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;"></path><path class="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor"></path></svg></a>
 ]
 
 ---
 
+layout: true
+
+<!--this adds the footer to all slides, depends on footer class in css-->
+<div class="footer" style="left: 5%;"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
+<div class="footer" style="left: 7.5%;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style = "max-width: 40%; opacity: 0.5;"></img></div>
+<div class="footer" style="left: 40%;"><a class="footer" href="http://www.nciea.org">     www.nciea.org</a></div>
+
+---
+
 class: inverse, center, middle
-
-
-
-
-
-<style>.shareagain-bar {
---shareagain-foreground: #FFFFFF;
---shareagain-background: #009C49;
---shareagain-facebook: none;
---shareagain-linkedin: none;
---shareagain-pinterest: none;
---shareagain-pocket: none;
---shareagain-reddit: none;
-}</style>
-
-<div>
-<style type="text/css">.xaringan-extra-logo {
-width: 55px;
-height: 64px;
-z-index: 0;
-background-image: url(https://centerforassessment.github.io/assets/favicon.png);
-background-size: contain;
-background-repeat: no-repeat;
-position: absolute;
-top:0.5em;right:0.5em;
-}
-</style>
-<script>(function () {
-  let tries = 0
-  function addLogo () {
-    if (typeof slideshow === 'undefined') {
-      tries += 1
-      if (tries < 10) {
-        setTimeout(addLogo, 100)
-      }
-    } else {
-      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
-        .forEach(function (slide) {
-          const logo = document.createElement('a')
-          logo.classList = 'xaringan-extra-logo'
-          logo.href = 'https://www.nciea.org'
-          slide.appendChild(logo)
-        })
-    }
-  }
-  document.addEventListener('DOMContentLoaded', addLogo)
-})()</script>
-</div>
-
-
-
-
 
 # Consolidating Analysis and Dissemination of Research using GitHub
 
@@ -146,11 +150,11 @@ Shiny (e.g., see this [simple example](https://www.lexjansen.com/pharmasug-cn/20
 + One way to implement this approach is by binding up the multiple write ups from multiple analyses (captured in individual . rmds ) into a larger book via the [bookdown](https://bookdown.org/yihui/rmarkdown/books.html) package.
 
 ---
-&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
 &lt;img src="Consolidating_Analysis_and_Dissemination_of_Research_Using_GitHub_files/figure-html/pages_to_book-1.png" width="1508" style="display: block; margin: auto;" /&gt;
 
 ---
-&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;br&gt;
 &lt;img src="Consolidating_Analysis_and_Dissemination_of_Research_Using_GitHub_files/figure-html/example_workbook-1.png" width="2456" style="display: block; margin: auto;" /&gt;
 
 ---
@@ -197,6 +201,7 @@ layout: false
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+"ratio": "16:9",
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false

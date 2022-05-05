@@ -3,55 +3,32 @@ title: "Web-based Distribution of Research Using GitHub"
 subtitle: "Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research"
 author: "Allie Cooperman"
 institute: "University of Minnesota"
-date: "April 20th, 2022"
+date: >- 
+  April 20th, 2022<br>NCME 2022 Annual Meeting<br>Demonstration Session
+  
+  ```{r, github-corner, echo=FALSE, results='asis'}
+    cat(cfaDocs:::makeOctoCat(
+      link='https://github.com/alliecooperman'))
+  ```
 output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      titleSlideClass: ["center", "middle", "my-title"]
+  cfaDocs::cfaXaringan:
+    include: !expr list(
+      footer = 'default',
+      footer_text = '<a class=\"footer\" href=\"https://centerforassessment.github.io/Internship_2021\">Research Distribution using GitHub</a>',
+      xaringanExtra = 'default',
+      xExtra_use = c('share_again', 'slide_tone', 'tile_view', 'clipboard'))
 ---
 class: inverse, center, middle
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
-
-```{r share-again, echo=FALSE}
-xaringanExtra::use_share_again()
-```
-
-```{r style-share-again, echo=FALSE}
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter"),
-  background = "#009C49",
-  foreground = "#FFFFFF"
-)
-```
-
-```{r xaringan-logo, echo=FALSE}
-xaringanExtra::use_logo(
-  image_url = "https://centerforassessment.github.io/assets/favicon.png",
-  width = "55px",
-  height = "64px",
-  position = xaringanExtra::css_position(top = "0.5em", right = "0.5em"),
-  link_url = "https://www.nciea.org")
-```
-
-```{r xaringan-tile-view, echo=FALSE}
-xaringanExtra::use_tile_view()
-```
-
-```{r xaringanExtra-clipboard, echo=FALSE}
-xaringanExtra::use_clipboard()
-```
-
-# Disseminating Results through GitHub Pages
+# Disseminating Results through <br/> GitHub Pages
 
 ---
 
+```{css, echo = FALSE}
+ h3 {
+   border-bottom: none;
+ }
+```
 # Improving Dissemination
 
 --
@@ -111,20 +88,17 @@ xaringanExtra::use_clipboard()
 ### Numerous (customizable) themes are available, including:
 
 --
-
 - [Supported themes from GitHub Pages](https://pages.github.com/themes/);
 
 --
-
 - Using the [pkgdown](https://pkgdown.r-lib.org/) R package (Wickham et al., 2022);
 
 --
-
 - Themes created by other GitHub users.
 
 ---
 
-# Combining Pages with Open-Source R Packages
+## Combining Pages with Open-Source R Packages
 
 --
 
@@ -140,22 +114,18 @@ xaringanExtra::use_clipboard()
 
 ---
 
-# What Can You Include in Your Website?
+## What Can You Include in Your Website?
 
 --
-
 ### Because GitHub Pages uses Git, R, and Markdown, numerous file types are available for your website:
 
 --
-
 - R Source code
 
 --
-
 - PDF or HTML presentations
 
 --
-
 - Dynamic HTML files
 
 --
@@ -163,74 +133,64 @@ xaringanExtra::use_clipboard()
 ### In the context of a research project, users might push:
 
 --
-
 - Research findings with reproducible code
 
 --
-
 - Help files for R or Python functions
 
 --
-
 - Vignettes demonstrating different analytic methods
 
 --
-
 - Tutorials for running an analysis with a particular data set
 
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
 --
-
 ### Completed a graduate internship with the Center for Assessment in Summer 2021.
 
 --
-
 ### Addressed methodological challenges to measuring the academic impact of COVID-19, particularly when making cross-sectional comparisons.
 
 --
-
 ### Internship work included:
 
 --
-
 - Comparing the efficacy of multiple imputation methods for missing scale scores and student growth percentiles;
 
 --
-
 - Exploring propensity score weighting to account for school enrollment changes; and
 
 --
-
 - Building R Markdown scripts for automated report generation.
 
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
-### Created a [GitHub-hosted website](https://centerforassessment.github.io/Internship_2021/) to showcase this work.
+#### Created a [GitHub-hosted website](https://centerforassessment.github.io/Internship_2021/) to showcase this work.
 
 --
 
-``` {r internship_homepage, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+``` {r internship_homepage, out.width='75%', fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/websitehome.png")
 ```
 
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
 --
 
-``` {r landing_page_for_propensity_score, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+``` {r landing_page_for_propensity_score, out.width='75%', fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/pswlanding.png")
 ```
 
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
 --
 
@@ -250,56 +210,56 @@ magick::image_read("Figs/pswlanding.png")
 
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
 --
 
-### Using R Markdown, we wrote a series of vignettes to present analyses throughout the internship.
+#### Using R Markdown, we wrote a series of vignettes to present analyses throughout the internship.
 
 --
 
-``` {r vignette_example, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+``` {r vignette_example, out.width='70%', fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/vignetteexample.png")
 ```
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
 --
 
-### Website source code is available in the repo, but we also included Markdown files with code to recreate the vignette analyses.
+#### Website source code is available in the repo, but we also included Markdown files with code to recreate the vignette analyses.
 
 --
 
-``` {r landing_page, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+``` {r landing_page, out.width='75%', fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/sourcecode.png")
 ```
 
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
 --
 
-### PDF slide decks were linked to the website for three organization-wide presentations.
+#### PDF slide decks were linked to the website for three organization-wide presentations.
 
 --
 
-``` {r landing_page_internship, out.width='75%', fig.align='center', echo=FALSE, eval = TRUE}
+``` {r landing_page_internship, out.width='60%', fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/presentations.png")
 ```
 
 ---
 
-# Graduate Student Internship Website
+## Graduate Student Internship Website
 
 --
 
-### Websites also allow you to include news and updates (e.g., release notes).
+#### Websites also allow you to include news and updates (e.g., release notes).
 
 --
 
-``` {r page_for_internship_updates, out.width='95%', fig.align='center', echo=FALSE, eval = TRUE}
+``` {r page_for_internship_updates, out.width='75%', fig.align='center', echo=FALSE, eval = TRUE}
 magick::image_read("Figs/news.png")
 ```
 
@@ -308,27 +268,20 @@ magick::image_read("Figs/news.png")
 # Resources and References
 
 --
+#### [Internship website example](https://centerforassessment.github.io/Internship_2021/index.html)
 
-### [Internship website example](https://centerforassessment.github.io/Internship_2021/index.html)
+--
+#### [Center for Assessment on GitHub](https://github.com/CenterForAssessment)
+
+--
+#### [Getting Started with GitHub](https://docs.github.com/en/get-started)
+
+--
+#### [GitHub Pages Documentation](https://docs.github.com/en/pages)
+
+--
+#### [pkgdown](https://pkgdown.r-lib.org/authors.html) by Wickham, Hesselberth, & Salmon (2022)
 
 --
 
-### [Center for Assessment on GitHub](https://github.com/CenterForAssessment)
-
---
-
-### [Getting Started with GitHub](https://docs.github.com/en/get-started)
-
---
-
-### [GitHub Pages Documentation](https://docs.github.com/en/pages)
-
---
-
-### [pkgdown](https://pkgdown.r-lib.org/authors.html) by Wickham, Hesselberth, & Salmon (2022)
-
---
-
-# Any questions?
-
-# coope782 at umn dot edu
+## Any questions? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coope782 at umn dot edu
