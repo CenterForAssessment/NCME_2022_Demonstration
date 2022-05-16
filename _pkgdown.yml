@@ -9,6 +9,7 @@ DESCRIPTION:
            person(given=c("Allie"), family="Cooperman", email="coope782@umn.edu", role="aut"))
   License: CC BY-SA 4.0
   BugReports: https://github.com/CenterForAssessment/NCME_2022_Demonstration/issues
+  Keywords: "GitHub, Open Research, RStats, SGP, student growth percentiles, NCME, Open Source"
 
 template:
   package: centerProjectTemplate
