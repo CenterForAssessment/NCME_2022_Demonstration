@@ -35,7 +35,7 @@ meta() %>%
   meta_social(
     title = "Consolidating Analysis and Dissemination of Research using GitHub • NCME 2022 • Nathan Dadey",
     url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#using-github-to-consolodate-the-analysis-and-dissemination-of-research",
-    image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Consolidating Analysis and Dissemination of Research using GitHub_files/TITLE_SLIDE_image.png",
+    image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Consolidating_Analysis_and_Dissemination_of_Research_using_GitHub_files/TITLE_SLIDE_image.png",
     image_alt = "Title slide for Consolidating Analysis and Dissemination of Research using GitHub",
     og_type = "article",
     og_locale = "en_US",

@@ -36,7 +36,7 @@ meta() %>%
   meta_social(
     title = "Report Generation and Dissemination using GitHub and RMarkdown • NCME 2022 • Adam VanIwaarden",
     url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#using-github-rmarkdown-for-report-generation-and-dissemination",
-    image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Report_Generation_and_Dissemination_using_GitHub_and_RMarkdown_files/TITLE_SLIDE_image.png",
+    image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Report_Generation_and_Dissemination_Using_GitHub_and_RMarkdown_files/TITLE_SLIDE_image.png",
     image_alt = "Title slide for Report Generation and Dissemination using GitHub and RMarkdown",
     og_type = "article",
     og_locale = "en_US",
