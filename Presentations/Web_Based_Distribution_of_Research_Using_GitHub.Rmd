@@ -18,6 +18,7 @@ output:
       xaringanExtra = 'default',
       xExtra_use = c('share_again', 'slide_tone', 'tile_view', 'clipboard'))
 ---
+layout: true
 
 ```{r metadata, echo=FALSE}
 # creating HTML metadata to accompany the slides
