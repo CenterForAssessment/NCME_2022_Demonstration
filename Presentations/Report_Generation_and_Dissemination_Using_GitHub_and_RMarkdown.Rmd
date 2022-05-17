@@ -47,7 +47,6 @@ meta() %>%
   )
 ```
 
----
 class: inverse, center, middle
 
 ```{r knitr-options-set, include=FALSE}

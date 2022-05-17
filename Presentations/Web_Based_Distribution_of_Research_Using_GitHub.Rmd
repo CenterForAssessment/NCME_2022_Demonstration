@@ -17,8 +17,8 @@ output:
       footer_text = '<a class=\"footer\" href=\"https://centerforassessment.github.io/Internship_2021\">Research Distribution using GitHub</a>',
       xaringanExtra = 'default',
       xExtra_use = c('share_again', 'slide_tone', 'tile_view', 'clipboard'))
+
 ---
-layout: true
 
 ```{r metadata, echo=FALSE}
 # creating HTML metadata to accompany the slides
@@ -45,7 +45,6 @@ meta() %>%
   )
 ```
 
----
 class: inverse, center, middle
 
 # Disseminating Results through <br/> GitHub Pages
