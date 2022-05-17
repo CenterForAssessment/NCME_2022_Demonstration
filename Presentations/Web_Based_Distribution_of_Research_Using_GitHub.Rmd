@@ -18,6 +18,33 @@ output:
       xaringanExtra = 'default',
       xExtra_use = c('share_again', 'slide_tone', 'tile_view', 'clipboard'))
 ---
+
+```{r metadata, echo=FALSE}
+# creating HTML metadata to accompany the slides
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "The second presentation of the NCME 2022 Demonstration Session on Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research",
+    subject = "Web-based Distribution of Research using GitHub",
+    generator = "xaringan and remark.js",
+    theme_color = "#b6e202"
+  ) %>% 
+  meta_name("github-repo" = "centerforassessment/NCME_2022_Demonstration") %>% 
+  meta_social(
+    title = "Web-based Distribution of Research using GitHub • NCME 2022 • Allie Cooperman",
+    url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#web-based-distribution-of-research-using-github",
+    image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Web_Based_Distribution_of_Research_Using_GitHub_files/TITLE_SLIDE_image.png",
+    image_alt = "Title slide for Web-based Distribution of Research using GitHub",
+    og_type = "article",
+    og_locale = "en_US",
+    og_author = "Allie Cooperman",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@acooperman",
+    twitter_site = "@NCIEA1"
+  )
+```
+
+---
 class: inverse, center, middle
 
 # Disseminating Results through <br/> GitHub Pages

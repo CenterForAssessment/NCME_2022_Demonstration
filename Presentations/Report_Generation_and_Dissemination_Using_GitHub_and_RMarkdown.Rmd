@@ -22,6 +22,32 @@ output:
     extras: !expr list(fig = 'cfa_assets/fig')
 ---
 
+```{r metadata, echo=FALSE}
+# creating HTML metadata to accompany the slides
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "The third presentation of the NCME 2022 Demonstration Session on Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research",
+    subject = "Report Generation and Dissemination using GitHub and RMarkdown",
+    generator = "xaringan and remark.js",
+    theme_color = "#b6e202"
+  ) %>% 
+  meta_name("github-repo" = "centerforassessment/NCME_2022_Demonstration") %>% 
+  meta_social(
+    title = "Report Generation and Dissemination using GitHub and RMarkdown • NCME 2022 • Adam VanIwaarden",
+    url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#using-github-rmarkdown-for-report-generation-and-dissemination",
+    image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Report_Generation_and_Dissemination_using_GitHub_and_RMarkdown_files/TITLE_SLIDE_image.png",
+    image_alt = "Title slide for Report Generation and Dissemination using GitHub and RMarkdown",
+    og_type = "article",
+    og_locale = "en_US",
+    og_author = "Adam VanIwaarden",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@adamvi",
+    twitter_site = "@NCIEA1"
+  )
+```
+
+---
 class: inverse, center, middle
 
 ```{r knitr-options-set, include=FALSE}

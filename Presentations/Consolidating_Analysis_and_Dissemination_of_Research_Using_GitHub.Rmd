@@ -20,6 +20,33 @@ output:
       xaringanExtra = 'default',
       xExtra_use = c('share_again', 'tile_view', 'clipboard'))
 ---
+
+```{r metadata, echo=FALSE}
+# creating HTML metadata to accompany the slides
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "The final presentation of the NCME 2022 Demonstration Session on Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research",
+    subject = "Consolidating Analysis and Dissemination of Research using GitHub",
+    generator = "xaringan and remark.js",
+    theme_color = "#b6e202"
+  ) %>% 
+  meta_name("github-repo" = "centerforassessment/NCME_2022_Demonstration") %>% 
+  meta_social(
+    title = "Consolidating Analysis and Dissemination of Research using GitHub • NCME 2022 • Nathan Dadey",
+    url = "https://centerforassessment.github.io/NCME_2022_Demonstration/articles/presentations/Demonstration_Session_Presentations.html#using-github-to-consolodate-the-analysis-and-dissemination-of-research",
+    image = "https://centerforassessment.github.io/NCME_2022_Demonstration/presentations/Consolidating Analysis and Dissemination of Research using GitHub_files/TITLE_SLIDE_image.png",
+    image_alt = "Title slide for Consolidating Analysis and Dissemination of Research using GitHub",
+    og_type = "article",
+    og_locale = "en_US",
+    og_author = "Nathan Dadey",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@ndadey",
+    twitter_site = "@NCIEA1"
+  )
+```
+
+---
 class: inverse, center, middle
 
 # Consolidating Analysis and Dissemination of Research using GitHub
